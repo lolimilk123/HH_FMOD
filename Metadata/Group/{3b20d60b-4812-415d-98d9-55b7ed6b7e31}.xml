@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{3b20d60b-4812-415d-98d9-55b7ed6b7e31}">
+		<property name="color">
+			<value>Green Light 2</value>
+		</property>
+		<property name="name">
+			<value>SFX</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{69bbd709-2397-4c3e-8957-0dd44945a6ee}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{6d69d6ed-922f-49dd-a8ab-36e74394378c}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{e5b68109-db04-4d15-a9e0-687c669880d7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{69bbd709-2397-4c3e-8957-0dd44945a6ee}">
+		<relationship name="effects">
+			<destination>{3f36546c-73ff-4836-acdb-a1bbd7205586}</destination>
+			<destination>{c9bdffe8-27f7-4452-83fd-734fa916b0a6}</destination>
+			<destination>{fdfe040b-65e3-48f1-86cf-8adce012211c}</destination>
+			<destination>{560af3e9-790c-4065-9af4-3a4077f119f5}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{6d69d6ed-922f-49dd-a8ab-36e74394378c}" />
+	<object class="MixerSend" id="{3f36546c-73ff-4836-acdb-a1bbd7205586}">
+		<property name="inputFormat">
+			<value>2</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{9b321d19-09d6-4ebf-81d1-5faf4fbc4edd}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{c9bdffe8-27f7-4452-83fd-734fa916b0a6}" />
+	<object class="MultibandEqEffect" id="{fdfe040b-65e3-48f1-86cf-8adce012211c}">
+		<property name="filterTypeA">
+			<value>8</value>
+		</property>
+		<property name="frequencyA">
+			<value>22000</value>
+		</property>
+	</object>
+	<object class="CompressorEffect" id="{560af3e9-790c-4065-9af4-3a4077f119f5}">
+		<property name="threshold">
+			<value>-12</value>
+		</property>
+		<property name="ratio">
+			<value>3</value>
+		</property>
+		<property name="attackTime">
+			<value>3.5999999</value>
+		</property>
+		<property name="releaseTime">
+			<value>450</value>
+		</property>
+		<property name="gain">
+			<value>-3</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{9cc0604e-bee7-4dd7-8102-44bce012eb58}</destination>
+		</relationship>
+	</object>
+</objects>

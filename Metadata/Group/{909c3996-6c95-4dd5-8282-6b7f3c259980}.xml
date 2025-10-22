@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{909c3996-6c95-4dd5-8282-6b7f3c259980}">
+		<property name="color">
+			<value>Red</value>
+		</property>
+		<property name="volume">
+			<value>1.20000005</value>
+		</property>
+		<property name="name">
+			<value>Ambience</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{5d5c9ecd-1635-4fd9-a8c0-7ec6ddca86fb}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{2e1f4b89-5130-4298-8fb0-f3f1721c6e6f}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{e5b68109-db04-4d15-a9e0-687c669880d7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{5d5c9ecd-1635-4fd9-a8c0-7ec6ddca86fb}">
+		<relationship name="effects">
+			<destination>{6068905c-cd33-4bef-b40a-9b2c81ae803b}</destination>
+			<destination>{04860fe0-eb43-4faf-becf-c3e591f40db2}</destination>
+			<destination>{f9d33b92-b2b6-413f-9c32-f2f78d7cefcc}</destination>
+			<destination>{ac39bcfe-ee4b-4a0f-b09a-5143ed6ff04c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{2e1f4b89-5130-4298-8fb0-f3f1721c6e6f}" />
+	<object class="MixerBusFader" id="{6068905c-cd33-4bef-b40a-9b2c81ae803b}" />
+	<object class="MultibandEqEffect" id="{04860fe0-eb43-4faf-becf-c3e591f40db2}">
+		<property name="filterTypeA">
+			<value>8</value>
+		</property>
+		<property name="frequencyA">
+			<value>22000</value>
+		</property>
+	</object>
+	<object class="CompressorEffect" id="{f9d33b92-b2b6-413f-9c32-f2f78d7cefcc}">
+		<property name="threshold">
+			<value>-12</value>
+		</property>
+		<property name="ratio">
+			<value>3</value>
+		</property>
+		<property name="attackTime">
+			<value>3.5999999</value>
+		</property>
+		<property name="releaseTime">
+			<value>450</value>
+		</property>
+		<property name="gain">
+			<value>-3</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{9cc0604e-bee7-4dd7-8102-44bce012eb58}</destination>
+		</relationship>
+	</object>
+	<object class="CompressorEffect" id="{ac39bcfe-ee4b-4a0f-b09a-5143ed6ff04c}" />
+</objects>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{78ba639f-7f1d-488d-b112-965baf4fecdd}">
+		<property name="name">
+			<value>Splitter</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{ac2689d0-b43c-43a1-a0d1-b6a2ef78b8e2}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{774d0e3b-595f-4808-ae6a-a933dc0a14ce}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{c7e2500a-5b6c-47f1-b9cf-3255effea2b4}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{ac2689d0-b43c-43a1-a0d1-b6a2ef78b8e2}">
+		<relationship name="effects">
+			<destination>{5b289169-2db1-4a7e-8805-e93bc623e661}</destination>
+			<destination>{05395085-9b68-42a6-bfcf-3e0f7fd71f47}</destination>
+			<destination>{230336d4-44ce-491a-ae13-ced1c7dcd566}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{774d0e3b-595f-4808-ae6a-a933dc0a14ce}" />
+	<object class="MixerBusFader" id="{5b289169-2db1-4a7e-8805-e93bc623e661}" />
+	<object class="MixerSend" id="{05395085-9b68-42a6-bfcf-3e0f7fd71f47}">
+		<property name="level">
+			<value>-32</value>
+		</property>
+		<property name="inputFormat">
+			<value>2</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{9b321d19-09d6-4ebf-81d1-5faf4fbc4edd}</destination>
+		</relationship>
+	</object>
+	<object class="MultibandEqEffect" id="{230336d4-44ce-491a-ae13-ced1c7dcd566}">
+		<property name="filterTypeA">
+			<value>8</value>
+		</property>
+		<property name="filterTypeB">
+			<value>9</value>
+		</property>
+		<property name="frequencyA">
+			<value>3073.21704</value>
+		</property>
+		<property name="frequencyB">
+			<value>230.578033</value>
+		</property>
+		<property name="gainA">
+			<value>-9.82758713</value>
+		</property>
+		<property name="gainB">
+			<value>3.62068892</value>
+		</property>
+	</object>
+</objects>

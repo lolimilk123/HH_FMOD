@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{e357c8c9-b6b0-4689-8676-db4618a0df7b}">
+		<property name="name">
+			<value>EnemyBullet_Chasing</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{5c833108-1151-4853-a83b-7645e21d7254}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{c65fd87b-9412-4359-84f0-09fccd941ffd}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{3b20d60b-4812-415d-98d9-55b7ed6b7e31}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{5c833108-1151-4853-a83b-7645e21d7254}">
+		<relationship name="effects">
+			<destination>{85356860-4ec4-49d2-97ae-c7a97e7da7d1}</destination>
+			<destination>{d5e9e2c8-ceaa-45ae-b9c3-c08ff8f83d00}</destination>
+			<destination>{d216da06-4eee-421d-a737-4e0ca3759f37}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{c65fd87b-9412-4359-84f0-09fccd941ffd}" />
+	<object class="MixerBusFader" id="{85356860-4ec4-49d2-97ae-c7a97e7da7d1}" />
+	<object class="CompressorEffect" id="{d5e9e2c8-ceaa-45ae-b9c3-c08ff8f83d00}">
+		<property name="threshold">
+			<value>-25.5</value>
+		</property>
+		<property name="gain">
+			<value>-4</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{d216da06-4eee-421d-a737-4e0ca3759f37}">
+		<property name="frequencyA">
+			<value>22000</value>
+		</property>
+	</object>
+</objects>

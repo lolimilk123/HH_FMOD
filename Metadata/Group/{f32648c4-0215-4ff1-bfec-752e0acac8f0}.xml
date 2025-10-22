@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{f32648c4-0215-4ff1-bfec-752e0acac8f0}">
+		<property name="name">
+			<value>PoisonGas</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{e0164c26-2745-4930-93cb-fedbc0e9769f}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{f049f8d5-0bfc-44b3-b6ed-31c5b2112af1}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{3b20d60b-4812-415d-98d9-55b7ed6b7e31}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{e0164c26-2745-4930-93cb-fedbc0e9769f}">
+		<relationship name="effects">
+			<destination>{56f72be5-52cd-4dc8-85b3-edc9451ca64a}</destination>
+			<destination>{c4bac261-900d-4161-baa9-263acef05e83}</destination>
+			<destination>{f67f68f8-a9ff-4509-9ac7-93db5a4405fc}</destination>
+			<destination>{6366d4d9-5add-4461-9256-3b3475f653dc}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{f049f8d5-0bfc-44b3-b6ed-31c5b2112af1}" />
+	<object class="CompressorEffect" id="{56f72be5-52cd-4dc8-85b3-edc9451ca64a}" />
+	<object class="MixerBusFader" id="{c4bac261-900d-4161-baa9-263acef05e83}" />
+	<object class="CompressorEffect" id="{f67f68f8-a9ff-4509-9ac7-93db5a4405fc}">
+		<property name="threshold">
+			<value>-34.5</value>
+		</property>
+		<property name="ratio">
+			<value>2</value>
+		</property>
+		<property name="attackTime">
+			<value>1.80000007</value>
+		</property>
+		<property name="gain">
+			<value>-2.5</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{6366d4d9-5add-4461-9256-3b3475f653dc}">
+		<property name="frequencyA">
+			<value>22000</value>
+		</property>
+	</object>
+</objects>

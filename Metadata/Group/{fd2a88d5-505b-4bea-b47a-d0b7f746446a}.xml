@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{fd2a88d5-505b-4bea-b47a-d0b7f746446a}">
+		<property name="name">
+			<value>PassByBattle</value>
+		</property>
+		<relationship name="automators">
+			<destination>{7a9963fb-bf0e-4feb-b6a8-edfaa73cbdde}</destination>
+		</relationship>
+		<relationship name="effectChain">
+			<destination>{fec40056-b27f-41b6-8056-09639d029bd0}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{69a6cac4-a450-4776-a676-d845344c17e2}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{3b20d60b-4812-415d-98d9-55b7ed6b7e31}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{7a9963fb-bf0e-4feb-b6a8-edfaa73cbdde}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{3b5532e7-9a17-4bab-8c99-3899faae5874}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{fec40056-b27f-41b6-8056-09639d029bd0}">
+		<relationship name="effects">
+			<destination>{9d478c09-c940-4d4e-973b-a3e6ade386ff}</destination>
+			<destination>{ab406737-6519-4945-8cd6-11b57a8d2a18}</destination>
+			<destination>{d2836fba-b462-4f9a-97a1-4c96d5d9af46}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{69a6cac4-a450-4776-a676-d845344c17e2}" />
+	<object class="AutomationCurve" id="{3b5532e7-9a17-4bab-8c99-3899faae5874}">
+		<relationship name="parameter">
+			<destination>{0636e975-27ed-46f3-bd6f-79f166495ef6}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{f720ddbb-82d0-470e-951c-b8761ce53080}</destination>
+			<destination>{b0033672-6091-41cb-8d57-4df554960faf}</destination>
+		</relationship>
+	</object>
+	<object class="CompressorEffect" id="{9d478c09-c940-4d4e-973b-a3e6ade386ff}" />
+	<object class="MixerBusFader" id="{ab406737-6519-4945-8cd6-11b57a8d2a18}" />
+	<object class="MultibandEqEffect" id="{d2836fba-b462-4f9a-97a1-4c96d5d9af46}">
+		<property name="frequencyA">
+			<value>22000</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{f720ddbb-82d0-470e-951c-b8761ce53080}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>3.81469727e-06</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{b0033672-6091-41cb-8d57-4df554960faf}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
+		</property>
+	</object>
+</objects>

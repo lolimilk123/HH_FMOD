@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{737f9381-e40d-4401-8c42-8a29d75e78a1}">
+		<property name="color">
+			<value>Blue Light 1</value>
+		</property>
+		<property name="volume">
+			<value>-2</value>
+		</property>
+		<property name="name">
+			<value>BGM</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{b4a32def-0469-4619-acb7-cecfc2fd501a}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{ed7fb4ce-1198-4da5-891b-d54b7264e853}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{e5b68109-db04-4d15-a9e0-687c669880d7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{b4a32def-0469-4619-acb7-cecfc2fd501a}">
+		<relationship name="effects">
+			<destination>{0a657300-adcf-4c62-901c-e902711406ec}</destination>
+			<destination>{d6948ae5-43c8-4f4c-a5a0-8df8e87d4920}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{ed7fb4ce-1198-4da5-891b-d54b7264e853}" />
+	<object class="MixerBusFader" id="{0a657300-adcf-4c62-901c-e902711406ec}" />
+	<object class="MultibandEqEffect" id="{d6948ae5-43c8-4f4c-a5a0-8df8e87d4920}">
+		<property name="filterTypeA">
+			<value>8</value>
+		</property>
+		<property name="frequencyA">
+			<value>22000</value>
+		</property>
+	</object>
+</objects>

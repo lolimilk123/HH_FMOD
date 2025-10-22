@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{219a3d0c-2b25-4998-941c-dfc9c1ca4ebb}">
+		<property name="volume">
+			<value>-3</value>
+		</property>
+		<property name="name">
+			<value>PlayerCombat</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{8f5107ef-b115-4601-b252-07b01453037e}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{acfc1694-4215-4b76-b845-13b9c2dfe8a5}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{3b20d60b-4812-415d-98d9-55b7ed6b7e31}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{8f5107ef-b115-4601-b252-07b01453037e}">
+		<relationship name="effects">
+			<destination>{e95ee351-a7b6-4779-aacf-9de4f239fd59}</destination>
+			<destination>{8118799b-0df8-4554-9a6b-4807ad84a67a}</destination>
+			<destination>{bf60c486-9b24-4e73-8ebf-d7442cc80f28}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{acfc1694-4215-4b76-b845-13b9c2dfe8a5}" />
+	<object class="MixerBusFader" id="{e95ee351-a7b6-4779-aacf-9de4f239fd59}" />
+	<object class="CompressorEffect" id="{8118799b-0df8-4554-9a6b-4807ad84a67a}">
+		<property name="threshold">
+			<value>-14</value>
+		</property>
+		<property name="ratio">
+			<value>1.79999995</value>
+		</property>
+		<property name="attackTime">
+			<value>3.60000014</value>
+		</property>
+		<property name="releaseTime">
+			<value>300</value>
+		</property>
+		<property name="gain">
+			<value>4.5</value>
+		</property>
+		<relationship name="sidechains">
+			<destination>{28dd3129-bad6-4f3a-adf9-94c0eef6d280}</destination>
+		</relationship>
+	</object>
+	<object class="DelayEffect" id="{bf60c486-9b24-4e73-8ebf-d7442cc80f28}">
+		<property name="delay">
+			<value>120</value>
+		</property>
+		<property name="feedback">
+			<value>17.5</value>
+		</property>
+		<property name="level">
+			<value>-80</value>
+		</property>
+	</object>
+</objects>

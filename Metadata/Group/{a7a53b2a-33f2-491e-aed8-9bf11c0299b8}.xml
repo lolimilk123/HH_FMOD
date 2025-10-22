@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{a7a53b2a-33f2-491e-aed8-9bf11c0299b8}">
+		<property name="name">
+			<value>Enemy_Break</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{b52246fd-dfba-45d3-a42c-a022993d3ace}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{8abd50cb-9351-4f29-8c1f-67d867bfa641}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{3b20d60b-4812-415d-98d9-55b7ed6b7e31}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{b52246fd-dfba-45d3-a42c-a022993d3ace}">
+		<relationship name="effects">
+			<destination>{d490cc0f-1e82-43e9-8e41-b4fe162395c6}</destination>
+			<destination>{f484dd31-9e5e-434d-bb37-0c5342c8b868}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{8abd50cb-9351-4f29-8c1f-67d867bfa641}" />
+	<object class="MixerBusFader" id="{d490cc0f-1e82-43e9-8e41-b4fe162395c6}" />
+	<object class="CompressorEffect" id="{f484dd31-9e5e-434d-bb37-0c5342c8b868}">
+		<property name="threshold">
+			<value>-6</value>
+		</property>
+		<property name="ratio">
+			<value>2</value>
+		</property>
+		<property name="attackTime">
+			<value>1.80000007</value>
+		</property>
+		<property name="gain">
+			<value>-2.5</value>
+		</property>
+	</object>
+</objects>

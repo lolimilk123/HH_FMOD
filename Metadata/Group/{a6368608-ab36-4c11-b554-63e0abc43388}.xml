@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{a6368608-ab36-4c11-b554-63e0abc43388}">
+		<property name="name">
+			<value>Damage</value>
+		</property>
+		<property name="maxInstances">
+			<value>1</value>
+		</property>
+		<property name="instanceStealing">
+			<value>3</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{9c911398-d20e-44c6-9c0c-960b9efdf276}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{42d775fd-0621-4a3e-a841-021d84f3e1c9}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{af9807c9-a302-4f56-a5a3-b1dff9a950a7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{9c911398-d20e-44c6-9c0c-960b9efdf276}">
+		<relationship name="effects">
+			<destination>{fc28e6d2-e229-4356-89a3-9e6f232746e7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{42d775fd-0621-4a3e-a841-021d84f3e1c9}" />
+	<object class="MixerBusFader" id="{fc28e6d2-e229-4356-89a3-9e6f232746e7}" />
+</objects>

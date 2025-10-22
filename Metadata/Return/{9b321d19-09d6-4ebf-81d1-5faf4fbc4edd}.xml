@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerReturn" id="{9b321d19-09d6-4ebf-81d1-5faf4fbc4edd}">
+		<property name="name">
+			<value>DialogueReverb</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{ad3a54a1-4a1d-40c3-9fa8-f21ccbdfff30}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{e4b38581-6d12-460c-a4a8-d3cb0dd3bad2}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{e5b68109-db04-4d15-a9e0-687c669880d7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{ad3a54a1-4a1d-40c3-9fa8-f21ccbdfff30}">
+		<relationship name="effects">
+			<destination>{b54be3b1-1fea-4c8a-9581-230e85266eea}</destination>
+			<destination>{7c12b86a-9320-488c-83a0-c1123afd21a1}</destination>
+			<destination>{57e5332d-12d1-4866-aee3-947de6cf3021}</destination>
+			<destination>{7c74f8d1-224e-4d5d-a70d-4a9943fd29a6}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{e4b38581-6d12-460c-a4a8-d3cb0dd3bad2}" />
+	<object class="DelayEffect" id="{b54be3b1-1fea-4c8a-9581-230e85266eea}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
+		<property name="delay">
+			<value>220</value>
+		</property>
+		<property name="feedback">
+			<value>23.5</value>
+		</property>
+		<property name="level">
+			<value>-35</value>
+		</property>
+	</object>
+	<object class="SFXReverbEffect" id="{7c12b86a-9320-488c-83a0-c1123afd21a1}">
+		<property name="HFReference">
+			<value>1100</value>
+		</property>
+		<property name="HFDecayRatio">
+			<value>44</value>
+		</property>
+		<property name="diffusion">
+			<value>48.5</value>
+		</property>
+		<property name="lowShelfFrequency">
+			<value>600</value>
+		</property>
+		<property name="wetLevel">
+			<value>-5</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{57e5332d-12d1-4866-aee3-947de6cf3021}" />
+	<object class="SFXReverbEffect" id="{7c74f8d1-224e-4d5d-a70d-4a9943fd29a6}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
+		<property name="decayTime">
+			<value>1800</value>
+		</property>
+		<property name="lowShelfFrequency">
+			<value>160</value>
+		</property>
+		<property name="highCut">
+			<value>9500</value>
+		</property>
+		<property name="earlyLateMix">
+			<value>48</value>
+		</property>
+		<property name="wetLevel">
+			<value>-16.5</value>
+		</property>
+	</object>
+</objects>
