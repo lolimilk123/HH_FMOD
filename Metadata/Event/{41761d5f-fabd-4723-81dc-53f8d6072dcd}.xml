@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{41761d5f-fabd-4723-81dc-53f8d6072dcd}">
 		<property name="name">
-			<value>Nichirin_Atk</value>
+			<value>Nichirin_Atk_Ready</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -58,7 +58,7 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{fd4591cf-2011-49dc-b5a7-c8c03d21639e}">
 		<property name="maximumDistance">
-			<value>80</value>
+			<value>8000</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{8b501f70-0196-4baf-9791-731be168df95}" />
@@ -94,8 +94,11 @@
 	<object class="MixerBusPanner" id="{bc0e5bb2-f121-4691-bab1-1cc3d2c3800f}" />
 	<object class="SingleSound" id="{95c625e5-36f0-49e6-809c-d45435789542}">
 		<property name="length">
-			<value>2.8710833333333334</value>
+			<value>1.1500000000000001</value>
 		</property>
+		<relationship name="fadeOutCurve">
+			<destination>{05b71ead-e0be-4d68-9f74-8a7c7007c586}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{98b7eb54-6864-4054-b8cd-259ed3248437}</destination>
 		</relationship>
@@ -122,6 +125,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{fa9cb354-fcb5-4b1e-ba9f-0cb5a7dc9779}" />
 	<object class="MixerBusFader" id="{e8e719a1-5d38-49eb-b344-a1c490527cbe}" />
+	<object class="FadeCurve" id="{05b71ead-e0be-4d68-9f74-8a7c7007c586}">
+		<relationship name="startPoint">
+			<destination>{b875df9b-f72a-4aed-b8bf-04de94cd41f3}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{fd938c5e-e05c-4efa-80fa-bbb8f4797ba5}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{ee9f1e76-02f9-4da3-9fee-2334657b0aa9}">
 		<relationship name="effects">
 			<destination>{013485f7-cae7-438c-8cc2-f5e81662550f}</destination>
@@ -131,7 +142,26 @@
 	<object class="MixerBusFader" id="{a99f8944-5525-4e6f-9dae-4b7962647d34}" />
 	<object class="SpatialiserEffect" id="{931ac8fd-245b-474b-be15-ee6218211965}">
 		<property name="maximumDistance">
-			<value>80</value>
+			<value>8000</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{b875df9b-f72a-4aed-b8bf-04de94cd41f3}">
+		<property name="position">
+			<value>1.05</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>0.25471893</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{fd938c5e-e05c-4efa-80fa-bbb8f4797ba5}">
+		<property name="position">
+			<value>1.1500000000000001</value>
+		</property>
+		<property name="value">
+			<value>0</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{013485f7-cae7-438c-8cc2-f5e81662550f}" />
