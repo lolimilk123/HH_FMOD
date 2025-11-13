@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{9f2804af-75bd-4f5e-a4cd-765f7ed46b3e}">
 		<property name="name">
-			<value>LightningShot</value>
+			<value>LightningCharge</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -58,16 +58,23 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{0eaa612b-c1e1-499d-9170-d59b1ee4bf1b}">
 		<property name="maximumDistance">
-			<value>35</value>
+			<value>95</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{3b8c99da-4800-4f8c-a10a-acea123895db}" />
 	<object class="GroupTrack" id="{0237a142-17de-44ea-967d-5207f3b2d888}">
+		<relationship name="modules">
+			<destination>{4e862ac1-c986-4e82-a8db-5359fb69e74d}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{15884314-6eae-40c2-816a-f13618e9b588}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{f0ffa281-bd4b-496a-b591-5dfb3c306431}" />
+	<object class="Timeline" id="{f0ffa281-bd4b-496a-b591-5dfb3c306431}">
+		<relationship name="modules">
+			<destination>{4e862ac1-c986-4e82-a8db-5359fb69e74d}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{a3a9d68d-bbcd-422e-9639-bf9a3b5e91db}">
 		<property name="volume">
 			<value>-13</value>
@@ -88,6 +95,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{09126178-4811-46c1-bb10-3ecd81c653e8}" />
+	<object class="SingleSound" id="{4e862ac1-c986-4e82-a8db-5359fb69e74d}">
+		<property name="length">
+			<value>1.1214374999999999</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>1.2000000000000002</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{ba183f17-43d8-43a8-9ed3-d82d5dbb9a29}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{15884314-6eae-40c2-816a-f13618e9b588}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -120,7 +138,7 @@
 	<object class="MixerBusFader" id="{01f1c1dc-85af-4feb-8ab8-dcde43b7c3e5}" />
 	<object class="SpatialiserEffect" id="{f22d21e9-5de5-4184-9728-9af946532502}">
 		<property name="maximumDistance">
-			<value>35</value>
+			<value>95</value>
 		</property>
 		<property name="panBlend">
 			<value>0.504999995</value>
