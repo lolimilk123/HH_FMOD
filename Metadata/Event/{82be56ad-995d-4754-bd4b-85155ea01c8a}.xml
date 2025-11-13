@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{82be56ad-995d-4754-bd4b-85155ea01c8a}">
 		<property name="name">
-			<value>DashAttackStart</value>
+			<value>BaseBall_DashAttackStart</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -63,11 +63,18 @@
 	</object>
 	<object class="MarkerTrack" id="{79ab1eb5-ef36-4b73-915d-3bfc1d5a06a5}" />
 	<object class="GroupTrack" id="{2c425668-50dc-4422-9a2a-9e1652228a88}">
+		<relationship name="modules">
+			<destination>{d5fe9e70-38aa-4d08-aeaf-b49ae64b9f24}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{4d8cf9ff-ac1d-4e82-ac7c-80f8ed08ac99}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{093e993e-5e58-41c8-8f6e-5058a00a291f}" />
+	<object class="Timeline" id="{093e993e-5e58-41c8-8f6e-5058a00a291f}">
+		<relationship name="modules">
+			<destination>{d5fe9e70-38aa-4d08-aeaf-b49ae64b9f24}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{ec6f55d2-6d6c-4e3f-877d-65d35875fb39}">
 		<relationship name="effectChain">
 			<destination>{5194701f-4c4d-40e8-ba63-a5b1553ccac6}</destination>
@@ -85,6 +92,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f4543b94-d99a-4c55-8627-9475fac82156}" />
+	<object class="SingleSound" id="{d5fe9e70-38aa-4d08-aeaf-b49ae64b9f24}">
+		<property name="length">
+			<value>0.30000000000000004</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{54256afb-cd27-468b-b82b-ea51dd534afc}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{4d8cf9ff-ac1d-4e82-ac7c-80f8ed08ac99}">
 		<property name="name">
 			<value>Audio 1</value>

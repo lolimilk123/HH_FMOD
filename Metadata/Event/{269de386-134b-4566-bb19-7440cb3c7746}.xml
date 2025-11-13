@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{269de386-134b-4566-bb19-7440cb3c7746}">
 		<property name="name">
-			<value>DashAttack</value>
+			<value>BaseBall_DashAttackSpin</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -58,17 +58,32 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{4650a66b-984d-48a3-97c3-19427c5d9a7c}">
 		<property name="maximumDistance">
-			<value>35</value>
+			<value>500</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{ab562c21-1865-4296-b9c7-2b65294be23e}" />
 	<object class="GroupTrack" id="{09b551bf-c4ef-4e22-b7bf-5ffdc7c3ce9c}">
+		<relationship name="modules">
+			<destination>{c98f653b-0d45-499c-b035-c6fc5b0e1435}</destination>
+			<destination>{6d72c230-8a38-429a-8534-764efed4809f}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{5b5b6976-fede-4fbf-bdf7-665ee2330ff5}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{1e20df56-b544-4900-b4f0-276d70ae33d0}" />
+	<object class="Timeline" id="{1e20df56-b544-4900-b4f0-276d70ae33d0}">
+		<relationship name="modules">
+			<destination>{c98f653b-0d45-499c-b035-c6fc5b0e1435}</destination>
+			<destination>{6d72c230-8a38-429a-8534-764efed4809f}</destination>
+		</relationship>
+		<relationship name="markers">
+			<destination>{97acadc8-8b24-4283-96b1-322c4da2ff60}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{308468d8-2d62-42ea-9ef0-b01eac2964da}">
+		<relationship name="modulators">
+			<destination>{c9fec834-79d0-4ac5-ac87-f70016ce2a7e}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{7762db95-5cdb-4958-8df2-fc50c9ea4a1b}</destination>
 		</relationship>
@@ -85,6 +100,28 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c35c84f6-63b1-44a2-ae4e-182e7c14849e}" />
+	<object class="SingleSound" id="{c98f653b-0d45-499c-b035-c6fc5b0e1435}">
+		<property name="start">
+			<value>0.25</value>
+		</property>
+		<property name="length">
+			<value>2.1193958333333334</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>1.0500000000000003</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{54256afb-cd27-468b-b82b-ea51dd534afc}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{6d72c230-8a38-429a-8534-764efed4809f}">
+		<property name="length">
+			<value>0.25</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{54256afb-cd27-468b-b82b-ea51dd534afc}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{5b5b6976-fede-4fbf-bdf7-665ee2330ff5}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -98,6 +135,34 @@
 		<relationship name="output">
 			<destination>{308468d8-2d62-42ea-9ef0-b01eac2964da}</destination>
 		</relationship>
+	</object>
+	<object class="LoopRegion" id="{97acadc8-8b24-4283-96b1-322c4da2ff60}">
+		<property name="position">
+			<value>0.25</value>
+		</property>
+		<property name="length">
+			<value>2</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{1e20df56-b544-4900-b4f0-276d70ae33d0}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{ab562c21-1865-4296-b9c7-2b65294be23e}</destination>
+		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{c9fec834-79d0-4ac5-ac87-f70016ce2a7e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{7762db95-5cdb-4958-8df2-fc50c9ea4a1b}">
 		<relationship name="effects">
@@ -117,10 +182,10 @@
 	<object class="MixerBusFader" id="{6a29f8ce-d4c0-473c-bada-6e3380f72fae}" />
 	<object class="SpatialiserEffect" id="{98222a7e-649d-4ead-8960-593104e97b43}">
 		<property name="maximumDistance">
-			<value>35</value>
+			<value>500</value>
 		</property>
 		<property name="panBlend">
-			<value>0.504999995</value>
+			<value>0.5</value>
 		</property>
 	</object>
 	<object class="LimiterEffect" id="{5aa55a95-af70-4b65-9d1d-74db04ec96f4}">
