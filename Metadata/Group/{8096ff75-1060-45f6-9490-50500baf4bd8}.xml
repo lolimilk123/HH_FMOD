@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{8096ff75-1060-45f6-9490-50500baf4bd8}">
+		<property name="name">
+			<value>HeavenlyGuardian_Hit</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{39f7b6fe-066a-476a-9057-699bbaae7199}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{7fb64c77-03e7-4a27-8c1a-d56185282778}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{3b20d60b-4812-415d-98d9-55b7ed6b7e31}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{39f7b6fe-066a-476a-9057-699bbaae7199}">
+		<relationship name="effects">
+			<destination>{744ad6cb-9ec7-47ef-af8d-ab3640ef8e20}</destination>
+			<destination>{e24f0470-4298-4d32-961a-c27cefd3146b}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{7fb64c77-03e7-4a27-8c1a-d56185282778}" />
+	<object class="CompressorEffect" id="{744ad6cb-9ec7-47ef-af8d-ab3640ef8e20}">
+		<property name="threshold">
+			<value>-5.75</value>
+		</property>
+		<property name="ratio">
+			<value>3.60000014</value>
+		</property>
+		<property name="attackTime">
+			<value>2.4000001</value>
+		</property>
+		<property name="releaseTime">
+			<value>700</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{e24f0470-4298-4d32-961a-c27cefd3146b}" />
+</objects>
