@@ -5,7 +5,7 @@
 			<value>AssaultMelee_Ready_PoseFoley</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{05e27f8b-af8d-41aa-99ff-e2728953809a}</destination>
@@ -73,7 +73,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{26557e62-462d-4623-a514-f10c2c43ce79}">
 		<property name="volume">
-			<value>4</value>
+			<value>1.5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{22a7553c-6eb3-49f0-9d5f-8253914e529f}</destination>
@@ -116,6 +116,7 @@
 	<object class="MixerBusEffectChain" id="{22a7553c-6eb3-49f0-9d5f-8253914e529f}">
 		<relationship name="effects">
 			<destination>{8e48a564-ad60-4fa9-b034-93fcb34aac60}</destination>
+			<destination>{124ba7d2-fb60-458a-9c97-37ab8cc2d9e1}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{305254b6-44ad-4e1a-9632-fbba64902744}" />
@@ -123,9 +124,38 @@
 	<object class="MixerBusEffectChain" id="{f5a0bf3e-647c-4c0e-8c72-f4fbfe0b5751}">
 		<relationship name="effects">
 			<destination>{e7b3c75f-2028-40ba-9c74-cedbc21b03ec}</destination>
+			<destination>{f3a59a0f-a810-4f74-9a36-bc445e9ec26a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c80e3eb4-d980-41a5-91a1-bae29e4a402a}" />
 	<object class="MixerBusFader" id="{8e48a564-ad60-4fa9-b034-93fcb34aac60}" />
+	<object class="SpatialiserEffect" id="{124ba7d2-fb60-458a-9c97-37ab8cc2d9e1}">
+		<property name="panBlend">
+			<value>0.514999986</value>
+		</property>
+		<property name="userStereoSeparation">
+			<value>132</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{e7b3c75f-2028-40ba-9c74-cedbc21b03ec}" />
+	<object class="MultibandEqEffect" id="{f3a59a0f-a810-4f74-9a36-bc445e9ec26a}">
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="filterTypeB">
+			<value>9</value>
+		</property>
+		<property name="frequencyA">
+			<value>212.238968</value>
+		</property>
+		<property name="frequencyB">
+			<value>963.149963</value>
+		</property>
+		<property name="gainA">
+			<value>-7.24137878</value>
+		</property>
+		<property name="gainB">
+			<value>-6.20689583</value>
+		</property>
+	</object>
 </objects>
