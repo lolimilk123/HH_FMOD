@@ -61,6 +61,9 @@
 		<property name="dopplerEnabled">
 			<value>true</value>
 		</property>
+		<property name="maximumDistance">
+			<value>35</value>
+		</property>
 	</object>
 	<object class="MarkerTrack" id="{8a10600c-bf76-4f17-a4ca-a67972db5bec}" />
 	<object class="GroupTrack" id="{90d166b9-4894-4b0c-bbc9-b5249c9543e3}">
@@ -86,6 +89,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{51da168e-b2d8-42d2-a674-f5c1defc6800}">
+		<property name="volume">
+			<value>-80</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{9ead6f81-4527-4008-8b6a-4affea3b186c}</destination>
 		</relationship>
@@ -163,6 +169,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{9ead6f81-4527-4008-8b6a-4affea3b186c}">
 		<relationship name="effects">
+			<destination>{3b3fde93-301f-4b49-b4cf-3e2cab27b8a6}</destination>
 			<destination>{2f52a1e2-4a44-47a0-b2ca-2ce10ec9f2b3}</destination>
 			<destination>{a794c663-d52c-4d2a-8f45-e1c8abf10153}</destination>
 			<destination>{63cd8f1c-2ff1-4ec4-88a3-9142c400ee18}</destination>
@@ -211,9 +218,32 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e89ed429-ca4d-4e5b-86c7-6bf2a60b722a}" />
+	<object class="MultibandEqEffect" id="{3b3fde93-301f-4b49-b4cf-3e2cab27b8a6}">
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="filterTypeB">
+			<value>8</value>
+		</property>
+		<property name="frequencyA">
+			<value>107.123421</value>
+		</property>
+		<property name="frequencyB">
+			<value>1113.47717</value>
+		</property>
+		<property name="gainA">
+			<value>-8</value>
+		</property>
+		<property name="gainB">
+			<value>-5.6896553</value>
+		</property>
+	</object>
 	<object class="SpatialiserEffect" id="{2f52a1e2-4a44-47a0-b2ca-2ce10ec9f2b3}">
+		<property name="maximumDistance">
+			<value>35</value>
+		</property>
 		<property name="panBlend">
-			<value>0.560000002</value>
+			<value>0.689999998</value>
 		</property>
 		<property name="userPanExtent">
 			<value>96</value>
@@ -249,7 +279,7 @@
 			<value>440</value>
 		</property>
 		<property name="gain">
-			<value>4</value>
+			<value>2</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{e44e5fda-8a38-4c80-b300-ad9899499733}" />

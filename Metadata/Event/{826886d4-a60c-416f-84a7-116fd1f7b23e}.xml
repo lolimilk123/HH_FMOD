@@ -100,7 +100,10 @@
 	<object class="MixerBusPanner" id="{9228189f-84d6-4f64-a6e7-65adeda01012}" />
 	<object class="SingleSound" id="{2577a49b-f8a0-4ca9-b1a1-81c69ec60a5b}">
 		<property name="length">
-			<value>1.4810430839002267</value>
+			<value>1.8266666666666667</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.040000000000000001</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{5bf74e1c-9f18-4e1c-b298-fd7908a363d6}</destination>
@@ -136,7 +139,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{ee96778a-c1a0-48ec-9fe5-1ff147732f66}">
 		<property name="volume">
-			<value>-2.5</value>
+			<value>-7</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
@@ -167,6 +170,7 @@
 	<object class="MixerBusFader" id="{20bf1776-5db5-45d9-88a3-96844f275515}" />
 	<object class="MixerBusEffectChain" id="{76ca6f6a-1d6b-4d5d-b382-93e0a9761340}">
 		<relationship name="effects">
+			<destination>{40adeb71-5152-499b-86b0-22829835bd51}</destination>
 			<destination>{6156fec5-46bd-4e86-8dc7-c4ec2bf21cc4}</destination>
 		</relationship>
 	</object>
@@ -220,6 +224,29 @@
 			<value>100</value>
 		</property>
 	</object>
+	<object class="MultibandEqEffect" id="{40adeb71-5152-499b-86b0-22829835bd51}">
+		<property name="filterTypeA">
+			<value>4</value>
+		</property>
+		<property name="filterTypeB">
+			<value>9</value>
+		</property>
+		<property name="frequencyA">
+			<value>50</value>
+		</property>
+		<property name="frequencyB">
+			<value>172.521454</value>
+		</property>
+		<property name="qualityA">
+			<value>0.623275876</value>
+		</property>
+		<property name="gainA">
+			<value>-7.24137878</value>
+		</property>
+		<property name="gainB">
+			<value>-2.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{6156fec5-46bd-4e86-8dc7-c4ec2bf21cc4}" />
 	<object class="AutomationPoint" id="{29d1d683-2d71-4ac4-ac40-da64a673a3d4}">
 		<property name="position">
@@ -242,13 +269,16 @@
 	</object>
 	<object class="DelayEffect" id="{2a2f6d64-de43-47eb-9325-735adabe9f8b}">
 		<property name="delay">
-			<value>86</value>
+			<value>96</value>
 		</property>
 		<property name="feedback">
-			<value>63.5</value>
+			<value>61</value>
 		</property>
 		<property name="level">
-			<value>-6.5</value>
+			<value>-1</value>
+		</property>
+		<property name="dryLevel">
+			<value>-0.5</value>
 		</property>
 	</object>
 	<object class="PannerEffect" id="{e652cbb9-f40e-4c9e-aa4b-6f1812bd8d13}">

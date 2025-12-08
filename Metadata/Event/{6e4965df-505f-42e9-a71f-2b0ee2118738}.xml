@@ -83,7 +83,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{5985a982-75c0-4273-8b05-3a9af88f665d}">
 		<property name="volume">
-			<value>7</value>
+			<value>2.5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{3c836642-fb69-43f6-841d-a439d08634af}</destination>
@@ -103,7 +103,7 @@
 	<object class="MixerBusPanner" id="{4dfa46f0-86a2-4f91-b122-80ab7b974a15}" />
 	<object class="SingleSound" id="{ef4f3cbe-9970-4505-a635-08bc3c50d813}">
 		<property name="length">
-			<value>0.85999999999999999</value>
+			<value>0.37275871559633045</value>
 		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{74fbaaf9-6cba-4392-9932-b1fcc543750a}</destination>
@@ -153,6 +153,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{3c836642-fb69-43f6-841d-a439d08634af}">
 		<relationship name="effects">
+			<destination>{d361cd05-d2d3-4e5a-bf03-ab09019c2b7c}</destination>
 			<destination>{745805ce-71ce-4d4c-bbf0-be638f1d7279}</destination>
 		</relationship>
 	</object>
@@ -180,10 +181,33 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ddae2f8a-ea72-440b-8af0-1381ae75a0e1}" />
+	<object class="MultibandEqEffect" id="{d361cd05-d2d3-4e5a-bf03-ab09019c2b7c}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="filterTypeB">
+			<value>8</value>
+		</property>
+		<property name="frequencyA">
+			<value>118.816147</value>
+		</property>
+		<property name="frequencyB">
+			<value>983.313721</value>
+		</property>
+		<property name="gainA">
+			<value>-6.20689583</value>
+		</property>
+		<property name="gainB">
+			<value>-4.65517235</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{745805ce-71ce-4d4c-bbf0-be638f1d7279}" />
 	<object class="AutomationPoint" id="{104dbd6f-58ba-495b-b158-a0f396d5a480}">
 		<property name="position">
-			<value>0.48015873015873023</value>
+			<value>0</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -194,13 +218,16 @@
 	</object>
 	<object class="AutomationPoint" id="{c5ef6539-9417-4628-94aa-c196363bdc4a}">
 		<property name="position">
-			<value>0.85999999999999999</value>
+			<value>0.37275871559633023</value>
 		</property>
 		<property name="value">
 			<value>0</value>
 		</property>
 	</object>
 	<object class="MultibandEqEffect" id="{064dd9fb-7117-47f4-a5a8-abaa31ae9925}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<property name="filterTypeA">
 			<value>7</value>
 		</property>

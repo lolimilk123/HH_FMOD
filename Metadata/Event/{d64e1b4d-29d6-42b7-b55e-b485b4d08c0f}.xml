@@ -176,17 +176,23 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{159da7f3-16d0-4b41-8155-2234ce841537}">
 		<relationship name="effects">
+			<destination>{5f697aa6-d6e9-41c9-ad8d-ae4b97ddd265}</destination>
 			<destination>{047ad34f-2ba4-4776-88d5-5422f8334aa0}</destination>
-			<destination>{ed69c65a-db7e-4cfa-999d-42e10b1ca702}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b2666aa3-6f77-47a1-979c-2d35d945b421}" />
 	<object class="SpatialiserEffect" id="{853293e7-8853-4d7d-8e4d-50a63fafd429}">
+		<property name="distanceRolloffType">
+			<value>1</value>
+		</property>
 		<property name="minimumDistance">
 			<value>0</value>
 		</property>
 		<property name="panBlend">
-			<value>0.75</value>
+			<value>0.714999974</value>
+		</property>
+		<property name="userStereoSeparation">
+			<value>18</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{8ae89b7d-719b-4182-8af1-9113384f4f1b}" />
@@ -210,10 +216,25 @@
 			<value>0</value>
 		</property>
 	</object>
-	<object class="MixerBusFader" id="{047ad34f-2ba4-4776-88d5-5422f8334aa0}" />
-	<object class="DistortionEffect" id="{ed69c65a-db7e-4cfa-999d-42e10b1ca702}">
-		<property name="level">
-			<value>0.620000005</value>
+	<object class="MultibandEqEffect" id="{5f697aa6-d6e9-41c9-ad8d-ae4b97ddd265}">
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="filterTypeB">
+			<value>8</value>
+		</property>
+		<property name="frequencyA">
+			<value>207.88681</value>
+		</property>
+		<property name="frequencyB">
+			<value>3859.8772</value>
+		</property>
+		<property name="gainA">
+			<value>3.62068892</value>
+		</property>
+		<property name="gainB">
+			<value>-25.3448277</value>
 		</property>
 	</object>
+	<object class="MixerBusFader" id="{047ad34f-2ba4-4776-88d5-5422f8334aa0}" />
 </objects>

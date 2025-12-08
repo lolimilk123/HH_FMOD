@@ -5,7 +5,7 @@
 			<value>Level3_C1_Cinematic_100_nozomi</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bf750f2f-bff8-4c08-ac55-09cb4e890954}</destination>
@@ -124,7 +124,7 @@
 			<value>0</value>
 		</property>
 		<property name="releaseTime">
-			<value>500</value>
+			<value>560</value>
 		</property>
 		<property name="finalValue">
 			<value>-80</value>
@@ -132,6 +132,9 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{dbb175ce-da23-454a-8f9a-0409291a860e}">
 		<relationship name="effects">
+			<destination>{fcc084f2-8905-4a2b-933b-20775fe7d3e3}</destination>
+			<destination>{fac9009c-4608-4290-95cd-7536ffd743e6}</destination>
+			<destination>{0302b349-38dd-4b8c-b8df-a2976fff18ea}</destination>
 			<destination>{0f940c86-f971-45d8-b141-648fb80c75fb}</destination>
 		</relationship>
 	</object>
@@ -139,10 +142,67 @@
 	<object class="MixerBusFader" id="{7d77a254-b91f-4aa8-be27-9112fd54dbfa}" />
 	<object class="MixerBusEffectChain" id="{1dbc578b-f226-4b19-9e1d-9b32ab438017}">
 		<relationship name="effects">
+			<destination>{55c710f0-0eb7-45d1-be1b-19548b156750}</destination>
 			<destination>{81ca67b4-4840-4609-9dd5-02784f2801a2}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{123e5873-4534-48a5-a43b-d20083024f2e}" />
+	<object class="SFXReverbEffect" id="{fcc084f2-8905-4a2b-933b-20775fe7d3e3}">
+		<property name="decayTime">
+			<value>1900</value>
+		</property>
+		<property name="lowShelfFrequency">
+			<value>410</value>
+		</property>
+		<property name="highCut">
+			<value>15000</value>
+		</property>
+		<property name="earlyLateMix">
+			<value>0</value>
+		</property>
+		<property name="wetLevel">
+			<value>-12</value>
+		</property>
+	</object>
+	<object class="DelayEffect" id="{fac9009c-4608-4290-95cd-7536ffd743e6}">
+		<property name="delay">
+			<value>86</value>
+		</property>
+		<property name="feedback">
+			<value>32</value>
+		</property>
+		<property name="level">
+			<value>-17.5</value>
+		</property>
+	</object>
+	<object class="PannerEffect" id="{0302b349-38dd-4b8c-b8df-a2976fff18ea}">
+		<property name="stereoPan">
+			<value>10</value>
+		</property>
+		<property name="overridingOutputFormat">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{0f940c86-f971-45d8-b141-648fb80c75fb}" />
+	<object class="MultibandEqEffect" id="{55c710f0-0eb7-45d1-be1b-19548b156750}">
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="filterTypeB">
+			<value>4</value>
+		</property>
+		<property name="frequencyA">
+			<value>183.58522</value>
+		</property>
+		<property name="frequencyB">
+			<value>85.2911987</value>
+		</property>
+		<property name="qualityB">
+			<value>0.393034458</value>
+		</property>
+		<property name="gainA">
+			<value>12.4137926</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{81ca67b4-4840-4609-9dd5-02784f2801a2}" />
 </objects>
