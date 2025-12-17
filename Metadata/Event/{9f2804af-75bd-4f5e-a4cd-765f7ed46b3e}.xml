@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{9f2804af-75bd-4f5e-a4cd-765f7ed46b3e}">
 		<property name="name">
-			<value>LightningCharge</value>
+			<value>LightningCharge_Big</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -76,6 +76,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{a3a9d68d-bbcd-422e-9639-bf9a3b5e91db}">
+		<property name="volume">
+			<value>-2</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{bf49ca58-78b2-49ab-a2a9-0a0c84007047}</destination>
 		</relationship>
@@ -127,6 +130,7 @@
 	<object class="MixerBusFader" id="{a04644bb-1399-40ee-976f-dd58b196110c}" />
 	<object class="MixerBusEffectChain" id="{625a4c3f-20dc-42f9-ac14-d910dab127a0}">
 		<relationship name="effects">
+			<destination>{f543d39f-3344-46de-bb5e-40c8dba71cd9}</destination>
 			<destination>{a30c4b57-778b-4902-a94e-5122ee4cab38}</destination>
 		</relationship>
 	</object>
@@ -138,6 +142,23 @@
 		</property>
 		<property name="panBlend">
 			<value>0.504999995</value>
+		</property>
+		<property name="userStereoSeparation">
+			<value>128</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{f543d39f-3344-46de-bb5e-40c8dba71cd9}">
+		<property name="filterTypeA">
+			<value>8</value>
+		</property>
+		<property name="frequencyA">
+			<value>6500</value>
+		</property>
+		<property name="qualityA">
+			<value>1.20000005</value>
+		</property>
+		<property name="gainA">
+			<value>-5</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{a30c4b57-778b-4902-a94e-5122ee4cab38}" />
