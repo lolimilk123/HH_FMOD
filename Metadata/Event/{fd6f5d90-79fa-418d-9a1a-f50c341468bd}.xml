@@ -5,7 +5,7 @@
 			<value>HeavyCombo_KnockOutAerialRave_1</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5e86bdc3-a682-410f-8236-0e20ddccb938}</destination>
@@ -117,8 +117,7 @@
 	<object class="MixerBusEffectChain" id="{917c2c9d-1ccd-49cb-a0e6-7c288ec694a8}">
 		<relationship name="effects">
 			<destination>{d0280167-6dd7-4054-bf15-aa46456170b3}</destination>
-			<destination>{83ae5638-b333-4524-8f31-b102035ed430}</destination>
-			<destination>{998c061c-612e-448b-b6a3-38c20396b3b1}</destination>
+			<destination>{df61aec7-6621-4e29-9b3b-8960093acaa7}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4e00496c-19c4-48bc-8798-fab75aa4ab8a}" />
@@ -130,51 +129,13 @@
 	</object>
 	<object class="MixerBusPanner" id="{1e24a081-cf4f-4d71-a6a9-24d9586b75f5}" />
 	<object class="MixerBusFader" id="{d0280167-6dd7-4054-bf15-aa46456170b3}" />
-	<object class="MultibandEqEffect" id="{83ae5638-b333-4524-8f31-b102035ed430}">
-		<property name="bypass">
-			<value>true</value>
+	<object class="ProxyEffect" id="{df61aec7-6621-4e29-9b3b-8960093acaa7}">
+		<property name="inputFormat">
+			<value>1</value>
 		</property>
-		<property name="filterTypeA">
-			<value>9</value>
-		</property>
-		<property name="filterTypeB">
-			<value>9</value>
-		</property>
-		<property name="frequencyA">
-			<value>150</value>
-		</property>
-		<property name="frequencyB">
-			<value>2500</value>
-		</property>
-		<property name="qualityA">
-			<value>0.800000012</value>
-		</property>
-		<property name="gainA">
-			<value>-3</value>
-		</property>
-		<property name="gainB">
-			<value>-2.5</value>
-		</property>
-	</object>
-	<object class="CompressorEffect" id="{998c061c-612e-448b-b6a3-38c20396b3b1}">
-		<property name="bypass">
-			<value>true</value>
-		</property>
-		<property name="threshold">
-			<value>-12.5</value>
-		</property>
-		<property name="ratio">
-			<value>1.89999998</value>
-		</property>
-		<property name="attackTime">
-			<value>8.60000038</value>
-		</property>
-		<property name="releaseTime">
-			<value>320</value>
-		</property>
-		<property name="gain">
-			<value>0.5</value>
-		</property>
+		<relationship name="preset">
+			<destination>{aa97c399-e703-4727-ac46-95e6aa045966}</destination>
+		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{bf6fde28-00b7-4c03-9f77-f935ce88467f}" />
 </objects>

@@ -5,7 +5,7 @@
 			<value>Combo_KnockOutAerialRave_3</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5e86bdc3-a682-410f-8236-0e20ddccb938}</destination>
@@ -120,8 +120,7 @@
 	<object class="MixerBusEffectChain" id="{8f36c1a5-a92f-480d-94bd-d23ecf0edf1c}">
 		<relationship name="effects">
 			<destination>{f0fb1ce6-0f24-439f-83e2-b0159b2523a6}</destination>
-			<destination>{59ad44e0-e3bb-421a-bec2-a934489803ab}</destination>
-			<destination>{ab9be256-15ea-428b-9e4f-21049708a0dd}</destination>
+			<destination>{8c5dbb47-549b-4646-b9ea-9027771d7851}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ec8e15a0-55a5-480c-a78b-f49fde2ef0d4}" />
@@ -133,45 +132,13 @@
 	</object>
 	<object class="MixerBusPanner" id="{4c2ea1da-e70a-4f29-8609-adb77360c90d}" />
 	<object class="MixerBusFader" id="{f0fb1ce6-0f24-439f-83e2-b0159b2523a6}" />
-	<object class="MultibandEqEffect" id="{59ad44e0-e3bb-421a-bec2-a934489803ab}">
-		<property name="bypass">
-			<value>true</value>
+	<object class="ProxyEffect" id="{8c5dbb47-549b-4646-b9ea-9027771d7851}">
+		<property name="inputFormat">
+			<value>1</value>
 		</property>
-		<property name="filterTypeA">
-			<value>9</value>
-		</property>
-		<property name="filterTypeB">
-			<value>9</value>
-		</property>
-		<property name="frequencyA">
-			<value>150</value>
-		</property>
-		<property name="frequencyB">
-			<value>2600</value>
-		</property>
-		<property name="qualityB">
-			<value>1.20000005</value>
-		</property>
-		<property name="gainB">
-			<value>-2</value>
-		</property>
-	</object>
-	<object class="CompressorEffect" id="{ab9be256-15ea-428b-9e4f-21049708a0dd}">
-		<property name="bypass">
-			<value>true</value>
-		</property>
-		<property name="threshold">
-			<value>-12.5</value>
-		</property>
-		<property name="ratio">
-			<value>1.85000002</value>
-		</property>
-		<property name="attackTime">
-			<value>14</value>
-		</property>
-		<property name="gain">
-			<value>1.5</value>
-		</property>
+		<relationship name="preset">
+			<destination>{aa97c399-e703-4727-ac46-95e6aa045966}</destination>
+		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{b1019010-32fb-41c7-a896-36a46b565f33}" />
 </objects>

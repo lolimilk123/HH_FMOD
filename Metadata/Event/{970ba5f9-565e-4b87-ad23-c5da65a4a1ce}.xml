@@ -5,7 +5,7 @@
 			<value>Normal_Slash_1</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5e86bdc3-a682-410f-8236-0e20ddccb938}</destination>
@@ -57,8 +57,8 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{19219b3d-975e-4d42-8735-da1b11508c10}">
-		<property name="maxVoices">
-			<value>1</value>
+		<property name="maximumDistance">
+			<value>30</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{dd0464f6-0f54-493f-b7d5-8b26cca4abcf}" />
@@ -127,7 +127,7 @@
 	<object class="MixerBusEffectChain" id="{b7af3f89-d6db-4bb1-92ae-95161da589b6}">
 		<relationship name="effects">
 			<destination>{4b9b71be-8284-4e2f-ba4c-70661a921f97}</destination>
-			<destination>{b6d8226b-6ec8-47d4-9d8d-7551e7afa21e}</destination>
+			<destination>{9c012b3b-282b-4c1b-890f-ebfb6df65a48}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{dbb13dde-b67b-44f9-a052-6139e8ada03d}" />
@@ -165,19 +165,13 @@
 	</object>
 	<object class="MixerBusPanner" id="{616567b3-f829-486a-8114-803de9c11cb7}" />
 	<object class="MixerBusFader" id="{4b9b71be-8284-4e2f-ba4c-70661a921f97}" />
-	<object class="MultibandEqEffect" id="{b6d8226b-6ec8-47d4-9d8d-7551e7afa21e}">
-		<property name="bypass">
-			<value>true</value>
+	<object class="ProxyEffect" id="{9c012b3b-282b-4c1b-890f-ebfb6df65a48}">
+		<property name="inputFormat">
+			<value>1</value>
 		</property>
-		<property name="filterTypeA">
-			<value>7</value>
-		</property>
-		<property name="frequencyA">
-			<value>308.171722</value>
-		</property>
-		<property name="gainA">
-			<value>-7</value>
-		</property>
+		<relationship name="preset">
+			<destination>{aa97c399-e703-4727-ac46-95e6aa045966}</destination>
+		</relationship>
 	</object>
 	<object class="AutomationPoint" id="{4c211255-b485-4f6c-b025-29a73e075b27}">
 		<property name="position">

@@ -5,7 +5,7 @@
 			<value>ComboD_2_2_S</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5e86bdc3-a682-410f-8236-0e20ddccb938}</destination>
@@ -97,11 +97,14 @@
 	<object class="MixerBusPanner" id="{949aa50e-7293-4017-89fa-510aabda83d6}" />
 	<object class="SingleSound" id="{c59c7fe7-149b-4fa0-8eb0-73e82446acb5}">
 		<property name="length">
-			<value>0.44999999999999996</value>
+			<value>0.45500000000000002</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>0.53000000000000003</value>
 		</property>
+		<relationship name="fadeOutCurve">
+			<destination>{3a5f6cbe-359c-408b-a8b1-f06794208554}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{258d48d0-166d-43f0-8625-a206a5d16614}</destination>
 		</relationship>
@@ -123,46 +126,70 @@
 	<object class="MixerBusEffectChain" id="{4dc742ed-9d80-47a1-bc91-3df8eecb348e}">
 		<relationship name="effects">
 			<destination>{f9e69015-0866-46c6-9ab9-bfee40550c65}</destination>
+			<destination>{3794d476-061c-4170-b419-894a8e1db9d5}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d96313e9-7e15-4e17-b0be-c4f194f195bb}" />
 	<object class="MixerBusFader" id="{0650d25e-5cbd-49ed-b131-d65698b04562}" />
+	<object class="FadeCurve" id="{3a5f6cbe-359c-408b-a8b1-f06794208554}">
+		<relationship name="startPoint">
+			<destination>{64a8fab4-9683-46b7-a987-8e6e0d598260}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{0a19ff06-27d1-4e70-9ab0-09a70509da59}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{fb57c26c-d764-4103-83e7-3841e49213bf}">
 		<relationship name="effects">
 			<destination>{62520060-7647-4434-865f-200af2f6b750}</destination>
-			<destination>{cadbd088-1a7f-4574-b270-bd5f994ada1c}</destination>
+			<destination>{f1b31668-0c9f-487a-98db-89f25d8cce17}</destination>
+			<destination>{03afc568-2712-46ab-9407-40e4d3167dcc}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f0c01069-2262-44be-a73e-9655f0740882}" />
 	<object class="MixerBusFader" id="{f9e69015-0866-46c6-9ab9-bfee40550c65}" />
-	<object class="MixerBusFader" id="{62520060-7647-4434-865f-200af2f6b750}" />
-	<object class="MultibandEqEffect" id="{cadbd088-1a7f-4574-b270-bd5f994ada1c}">
-		<property name="bypass">
-			<value>true</value>
+	<object class="ProxyEffect" id="{3794d476-061c-4170-b419-894a8e1db9d5}">
+		<property name="inputFormat">
+			<value>0</value>
 		</property>
-		<property name="filterTypeA">
-			<value>9</value>
+		<relationship name="preset">
+			<destination>{aa97c399-e703-4727-ac46-95e6aa045966}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{64a8fab4-9683-46b7-a987-8e6e0d598260}">
+		<property name="position">
+			<value>0.35999999999999999</value>
 		</property>
-		<property name="filterTypeB">
-			<value>9</value>
-		</property>
-		<property name="frequencyA">
-			<value>4107.41016</value>
-		</property>
-		<property name="frequencyB">
-			<value>15792.5127</value>
-		</property>
-		<property name="qualityA">
+		<property name="value">
 			<value>1</value>
 		</property>
-		<property name="qualityB">
-			<value>0.479999989</value>
+		<property name="curveShape">
+			<value>-0.236348882</value>
 		</property>
-		<property name="gainA">
-			<value>-4</value>
+	</object>
+	<object class="AutomationPoint" id="{0a19ff06-27d1-4e70-9ab0-09a70509da59}">
+		<property name="position">
+			<value>0.45500000000000002</value>
 		</property>
-		<property name="gainB">
-			<value>-1.5</value>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{62520060-7647-4434-865f-200af2f6b750}" />
+	<object class="SFXReverbEffect" id="{f1b31668-0c9f-487a-98db-89f25d8cce17}">
+		<property name="diffusion">
+			<value>0</value>
+		</property>
+		<property name="earlyLateMix">
+			<value>24</value>
+		</property>
+		<property name="wetLevel">
+			<value>-24.5</value>
+		</property>
+	</object>
+	<object class="PannerEffect" id="{03afc568-2712-46ab-9407-40e4d3167dcc}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
 		</property>
 	</object>
 </objects>

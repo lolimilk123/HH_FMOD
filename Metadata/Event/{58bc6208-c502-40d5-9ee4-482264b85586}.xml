@@ -60,6 +60,9 @@
 		<property name="maxVoices">
 			<value>1</value>
 		</property>
+		<property name="maximumDistance">
+			<value>30</value>
+		</property>
 	</object>
 	<object class="MarkerTrack" id="{de8c403d-a099-4566-a251-6e0a8a53e82b}" />
 	<object class="GroupTrack" id="{c9005291-2561-4001-b2f7-1beacabf01a0}">
@@ -152,8 +155,6 @@
 	<object class="MixerBusEffectChain" id="{ed711f64-b7a9-46fc-8366-e9cbe9afeb83}">
 		<relationship name="effects">
 			<destination>{886bda3c-faf8-4b45-b632-2f1b037d1a83}</destination>
-			<destination>{a6908326-cd8d-4a06-a7c2-c556ef4173bb}</destination>
-			<destination>{e56ae1b3-f874-45e7-8a5b-205b9ab9872f}</destination>
 			<destination>{6d3cd52a-8304-498a-84ea-37761f4c9d05}</destination>
 		</relationship>
 	</object>
@@ -174,53 +175,10 @@
 	</object>
 	<object class="MixerBusPanner" id="{a18e66ce-6e65-436d-80ea-22deed010300}" />
 	<object class="MixerBusFader" id="{886bda3c-faf8-4b45-b632-2f1b037d1a83}" />
-	<object class="MultibandEqEffect" id="{a6908326-cd8d-4a06-a7c2-c556ef4173bb}">
-		<property name="bypass">
-			<value>true</value>
-		</property>
-		<property name="filterTypeA">
-			<value>9</value>
-		</property>
-		<property name="filterTypeB">
-			<value>9</value>
-		</property>
-		<property name="frequencyA">
-			<value>150</value>
-		</property>
-		<property name="frequencyB">
-			<value>2100</value>
-		</property>
-		<property name="qualityA">
-			<value>0.800000012</value>
-		</property>
-		<property name="gainA">
-			<value>-3</value>
-		</property>
-		<property name="gainB">
-			<value>-2</value>
-		</property>
-	</object>
-	<object class="CompressorEffect" id="{e56ae1b3-f874-45e7-8a5b-205b9ab9872f}">
-		<property name="bypass">
-			<value>true</value>
-		</property>
-		<property name="threshold">
-			<value>-12.5</value>
-		</property>
-		<property name="ratio">
-			<value>1.89999998</value>
-		</property>
-		<property name="attackTime">
-			<value>8.60000038</value>
-		</property>
-		<property name="releaseTime">
-			<value>320</value>
-		</property>
-		<property name="gain">
-			<value>0.5</value>
-		</property>
-	</object>
 	<object class="SpatialiserEffect" id="{6d3cd52a-8304-498a-84ea-37761f4c9d05}">
+		<property name="maximumDistance">
+			<value>30</value>
+		</property>
 		<property name="panBlend">
 			<value>0.349999994</value>
 		</property>

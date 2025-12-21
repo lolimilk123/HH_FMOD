@@ -5,7 +5,7 @@
 			<value>ComboD_2_1_S</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5e86bdc3-a682-410f-8236-0e20ddccb938}</destination>
@@ -97,11 +97,14 @@
 	<object class="MixerBusPanner" id="{960d5000-a27d-434a-9b69-8217c1ea33ee}" />
 	<object class="SingleSound" id="{89c9b5ca-35d2-4fab-b607-9d100d2ac154}">
 		<property name="length">
-			<value>0.20450000000000002</value>
+			<value>0.255</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>0.32550000000000001</value>
 		</property>
+		<relationship name="fadeOutCurve">
+			<destination>{78e420e0-0a83-40c7-bab4-2a83bb716dbe}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{258d48d0-166d-43f0-8625-a206a5d16614}</destination>
 		</relationship>
@@ -123,18 +126,56 @@
 	<object class="MixerBusEffectChain" id="{9ac48a15-b5a7-44a5-b9e6-a9a50b376804}">
 		<relationship name="effects">
 			<destination>{b08a0c2d-55c7-4c7a-9158-6ad8283705e2}</destination>
+			<destination>{db290406-28d3-42d6-9279-625d7adbd481}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{1a8ef89a-1333-4f3f-8c94-817bbef49ca3}" />
 	<object class="MixerBusFader" id="{189bd842-ebf0-4357-88f4-9401c1b5be22}" />
+	<object class="FadeCurve" id="{78e420e0-0a83-40c7-bab4-2a83bb716dbe}">
+		<relationship name="startPoint">
+			<destination>{76e06a7b-3f7d-43f1-ba70-5feb21f8e621}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{ac3b1cad-3957-461b-a205-6516d8efc0aa}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{1df6b2b2-780e-411c-a729-89e254a1c484}">
 		<relationship name="effects">
 			<destination>{887edffb-5c3a-4eb8-aa05-23d6f07951b1}</destination>
 			<destination>{ef39fa30-7d68-4fe8-a0a3-09b48c1b8bef}</destination>
+			<destination>{b343329d-a0b9-492d-a209-727452fc65dd}</destination>
+			<destination>{3f316118-3198-4ed0-83d4-7a739219517d}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{93dc02e1-96f4-446a-b740-6ab5e18e347f}" />
 	<object class="MixerBusFader" id="{b08a0c2d-55c7-4c7a-9158-6ad8283705e2}" />
+	<object class="ProxyEffect" id="{db290406-28d3-42d6-9279-625d7adbd481}">
+		<property name="inputFormat">
+			<value>0</value>
+		</property>
+		<relationship name="preset">
+			<destination>{aa97c399-e703-4727-ac46-95e6aa045966}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{76e06a7b-3f7d-43f1-ba70-5feb21f8e621}">
+		<property name="position">
+			<value>0.17549999999999999</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.186766088</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{ac3b1cad-3957-461b-a205-6516d8efc0aa}">
+		<property name="position">
+			<value>0.255</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{887edffb-5c3a-4eb8-aa05-23d6f07951b1}" />
 	<object class="MultibandEqEffect" id="{ef39fa30-7d68-4fe8-a0a3-09b48c1b8bef}">
 		<property name="bypass">
@@ -163,6 +204,22 @@
 		</property>
 		<property name="gainB">
 			<value>-1.5</value>
+		</property>
+	</object>
+	<object class="SFXReverbEffect" id="{b343329d-a0b9-492d-a209-727452fc65dd}">
+		<property name="diffusion">
+			<value>0</value>
+		</property>
+		<property name="earlyLateMix">
+			<value>24</value>
+		</property>
+		<property name="wetLevel">
+			<value>-24.5</value>
+		</property>
+	</object>
+	<object class="PannerEffect" id="{3f316118-3198-4ed0-83d4-7a739219517d}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
 		</property>
 	</object>
 </objects>

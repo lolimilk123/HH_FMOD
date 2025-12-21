@@ -5,7 +5,7 @@
 			<value>AirAttack1</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5e86bdc3-a682-410f-8236-0e20ddccb938}</destination>
@@ -59,6 +59,9 @@
 	<object class="EventAutomatableProperties" id="{d75385ec-33a7-481e-ab78-0cdadb6b469e}">
 		<property name="maxVoices">
 			<value>1</value>
+		</property>
+		<property name="maximumDistance">
+			<value>30</value>
 		</property>
 		<property name="triggerCooldown">
 			<value>320</value>
@@ -130,6 +133,7 @@
 	<object class="MixerBusEffectChain" id="{f24490f7-27b5-4ffd-927a-11be592634af}">
 		<relationship name="effects">
 			<destination>{193cb553-0040-4345-a87f-0c58af0a04d5}</destination>
+			<destination>{1154f82b-aa31-4c02-9285-2aab8246a255}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e4185c37-29bb-4a57-a1db-a23bac62d81a}" />
@@ -168,6 +172,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{b96639ac-6f74-41e6-ac1b-2246ab42ec9d}" />
 	<object class="MixerBusFader" id="{193cb553-0040-4345-a87f-0c58af0a04d5}" />
+	<object class="ProxyEffect" id="{1154f82b-aa31-4c02-9285-2aab8246a255}">
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="preset">
+			<destination>{aa97c399-e703-4727-ac46-95e6aa045966}</destination>
+		</relationship>
+	</object>
 	<object class="AutomationPoint" id="{b7c2bc2f-7a14-42eb-a041-6c96b71859dc}">
 		<property name="position">
 			<value>0</value>
