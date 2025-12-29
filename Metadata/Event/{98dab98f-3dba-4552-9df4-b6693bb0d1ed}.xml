@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{98dab98f-3dba-4552-9df4-b6693bb0d1ed}">
 		<property name="name">
-			<value>TornadoBullet</value>
+			<value>TornadoCast</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -58,10 +58,7 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{ec9f3f98-e20d-412b-bc11-8f84d06a9885}">
 		<property name="maximumDistance">
-			<value>35</value>
-		</property>
-		<property name="triggerCooldown">
-			<value>20</value>
+			<value>50</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{89b305e0-a3c3-4f67-87ec-35b823601c74}" />
@@ -104,9 +101,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{5003b9bc-79dc-4be3-b7a1-e70f351974a4}">
-		<property name="volume">
-			<value>-2</value>
-		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -131,17 +125,32 @@
 	<object class="MixerBusEffectChain" id="{4caeeed3-340f-4a80-bcdd-586884856018}">
 		<relationship name="effects">
 			<destination>{f7945240-48bd-4cad-acd1-796fc1117434}</destination>
+			<destination>{48eec3fd-1592-438b-b6f4-04b2e16c0fbf}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{edea1242-46ab-4f8a-b95b-77252c362d12}" />
 	<object class="MixerBusFader" id="{0b564e64-e697-4a36-a297-7ed417789e77}" />
 	<object class="SpatialiserEffect" id="{cd329894-1f40-48e7-af0b-927fbe6341ca}">
 		<property name="maximumDistance">
-			<value>35</value>
+			<value>50</value>
 		</property>
 		<property name="panBlend">
-			<value>0.504999995</value>
+			<value>0.514999986</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{f7945240-48bd-4cad-acd1-796fc1117434}" />
+	<object class="CompressorEffect" id="{48eec3fd-1592-438b-b6f4-04b2e16c0fbf}">
+		<property name="threshold">
+			<value>-10.5</value>
+		</property>
+		<property name="ratio">
+			<value>3</value>
+		</property>
+		<property name="attackTime">
+			<value>2.4000001</value>
+		</property>
+		<property name="releaseTime">
+			<value>20</value>
+		</property>
+	</object>
 </objects>
