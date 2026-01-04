@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerReturn" id="{9b321d19-09d6-4ebf-81d1-5faf4fbc4edd}">
+		<property name="volume">
+			<value>-80</value>
+		</property>
 		<property name="name">
-			<value>DialogueReverb</value>
+			<value>Reverb</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{ad3a54a1-4a1d-40c3-9fa8-f21ccbdfff30}</destination>
@@ -16,12 +19,26 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{ad3a54a1-4a1d-40c3-9fa8-f21ccbdfff30}">
 		<relationship name="effects">
-			<destination>{7c12b86a-9320-488c-83a0-c1123afd21a1}</destination>
 			<destination>{92374db1-fde8-4293-a948-e7194f1b0d16}</destination>
+			<destination>{7c12b86a-9320-488c-83a0-c1123afd21a1}</destination>
 			<destination>{57e5332d-12d1-4866-aee3-947de6cf3021}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e4b38581-6d12-460c-a4a8-d3cb0dd3bad2}" />
+	<object class="DelayEffect" id="{92374db1-fde8-4293-a948-e7194f1b0d16}">
+		<property name="delay">
+			<value>200</value>
+		</property>
+		<property name="feedback">
+			<value>11.5</value>
+		</property>
+		<property name="level">
+			<value>-80</value>
+		</property>
+		<property name="dryLevel">
+			<value>-5</value>
+		</property>
+	</object>
 	<object class="SFXReverbEffect" id="{7c12b86a-9320-488c-83a0-c1123afd21a1}">
 		<property name="decayTime">
 			<value>2500</value>
@@ -49,20 +66,6 @@
 		</property>
 		<property name="dryLevel">
 			<value>-80</value>
-		</property>
-	</object>
-	<object class="DelayEffect" id="{92374db1-fde8-4293-a948-e7194f1b0d16}">
-		<property name="delay">
-			<value>200</value>
-		</property>
-		<property name="feedback">
-			<value>11.5</value>
-		</property>
-		<property name="level">
-			<value>-11.5</value>
-		</property>
-		<property name="dryLevel">
-			<value>-5</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{57e5332d-12d1-4866-aee3-947de6cf3021}" />
