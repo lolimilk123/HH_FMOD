@@ -127,13 +127,12 @@
 	</object>
 	<object class="MultiSound" id="{dfba20a5-1ff7-489f-a1c5-fc2d5ac4e4ac}">
 		<property name="start">
-			<value>1.25</value>
+			<value>1.1500000000000001</value>
 		</property>
 		<property name="length">
 			<value>1.9500000000000002</value>
 		</property>
 		<relationship name="sounds">
-			<destination>{42d0dff9-4207-44d3-8f89-97de9d7900c5}</destination>
 			<destination>{78a17d10-6288-45b9-ad6a-d37a94762bd6}</destination>
 			<destination>{9dfa3114-3988-4f1f-99cd-deead9438740}</destination>
 		</relationship>
@@ -172,7 +171,7 @@
 	<object class="MixerBusEffectChain" id="{67400007-1ff0-42f5-a3a0-d6e1fb86848f}">
 		<relationship name="effects">
 			<destination>{a65a6f3b-e143-457f-8faf-88556c3f49de}</destination>
-			<destination>{59e4bbb1-839e-4ecb-bc68-b21d187b08ca}</destination>
+			<destination>{83106f39-93bc-4247-944c-2f3d0656b59f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9e052157-1701-4518-8b2b-106272516b42}" />
@@ -198,11 +197,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4d152da9-cea4-4578-aa39-911e652b00d2}" />
-	<object class="SingleSound" id="{42d0dff9-4207-44d3-8f89-97de9d7900c5}">
-		<relationship name="audioFile">
-			<destination>{5e0926a8-f956-4bfb-8b61-0a1189b00e90}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{78a17d10-6288-45b9-ad6a-d37a94762bd6}">
 		<relationship name="audioFile">
 			<destination>{5b92fbd7-4b25-43dd-abc7-2b5a3fc42b63}</destination>
@@ -220,13 +214,16 @@
 	</object>
 	<object class="MixerBusPanner" id="{ab371585-7595-4923-9ea2-39b705795c3a}" />
 	<object class="MixerBusFader" id="{a65a6f3b-e143-457f-8faf-88556c3f49de}" />
-	<object class="ProxyEffect" id="{59e4bbb1-839e-4ecb-bc68-b21d187b08ca}">
-		<property name="inputFormat">
-			<value>0</value>
+	<object class="SpatialiserEffect" id="{83106f39-93bc-4247-944c-2f3d0656b59f}">
+		<property name="maximumDistance">
+			<value>75</value>
 		</property>
-		<relationship name="preset">
-			<destination>{1b99cfd0-cf96-424a-9ed3-f596aa538efe}</destination>
-		</relationship>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+		<property name="panBlend">
+			<value>0.424999982</value>
+		</property>
 	</object>
 	<object class="MixerBusFader" id="{f1a5419f-f72e-4d54-be63-8cb681031242}" />
 	<object class="MixerBusFader" id="{7760c634-d897-4683-a7e5-81986a5cf0c9}" />
