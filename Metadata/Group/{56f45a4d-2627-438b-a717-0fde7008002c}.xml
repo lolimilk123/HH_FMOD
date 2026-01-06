@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{56f45a4d-2627-438b-a717-0fde7008002c}">
+		<property name="name">
+			<value>Grp_LightningCharge_Small</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{be2de625-d8a5-44d3-bf5b-13edd49d9ed6}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{52cc68a4-d109-4593-ac5f-ac67b595def6}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{7e5fbc13-a720-4f54-baf7-04534535bf2c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{be2de625-d8a5-44d3-bf5b-13edd49d9ed6}">
+		<relationship name="effects">
+			<destination>{7a71c63d-6cbe-45dd-9d8f-fe03d6d46e58}</destination>
+			<destination>{cd201ffc-d9aa-4f3b-8738-3f65496475c9}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{52cc68a4-d109-4593-ac5f-ac67b595def6}" />
+	<object class="CompressorEffect" id="{7a71c63d-6cbe-45dd-9d8f-fe03d6d46e58}">
+		<property name="threshold">
+			<value>-10.5</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{cd201ffc-d9aa-4f3b-8738-3f65496475c9}" />
+</objects>

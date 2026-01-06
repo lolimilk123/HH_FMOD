@@ -54,15 +54,12 @@
 			<destination>{d35ea19b-f845-49db-8aaa-8b46f971adce}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{7e5fbc13-a720-4f54-baf7-04534535bf2c}</destination>
+			<destination>{56f45a4d-2627-438b-a717-0fde7008002c}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{1f3ba936-0a8c-4dd5-aff9-1547cef6d3c3}">
-		<property name="maxVoices">
-			<value>3</value>
-		</property>
 		<property name="maximumDistance">
-			<value>40</value>
+			<value>30</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{a873b77d-b723-47f8-bc67-ae3648ac0203}" />
@@ -92,8 +89,11 @@
 	</object>
 	<object class="EventMixerMaster" id="{137d148f-6ddf-40e3-b772-824c74bd5afb}">
 		<property name="volume">
-			<value>-4.5</value>
+			<value>-10</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{386ff6eb-abe5-44c8-9213-972c1756b1ec}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{e806f604-f428-48d8-b631-78005dcf5541}</destination>
 		</relationship>
@@ -198,6 +198,23 @@
 			<destination>{137d148f-6ddf-40e3-b772-824c74bd5afb}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{386ff6eb-abe5-44c8-9213-972c1756b1ec}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="releaseTime">
+			<value>660</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{e806f604-f428-48d8-b631-78005dcf5541}">
 		<relationship name="effects">
 			<destination>{8b6b8095-7248-4f91-b31e-b55cf900d4da}</destination>
@@ -261,7 +278,7 @@
 	<object class="MixerBusFader" id="{8b6b8095-7248-4f91-b31e-b55cf900d4da}" />
 	<object class="SpatialiserEffect" id="{f95c2bf6-8098-45b3-9c33-bff60825a105}">
 		<property name="maximumDistance">
-			<value>40</value>
+			<value>30</value>
 		</property>
 		<property name="panBlend">
 			<value>0.849999964</value>

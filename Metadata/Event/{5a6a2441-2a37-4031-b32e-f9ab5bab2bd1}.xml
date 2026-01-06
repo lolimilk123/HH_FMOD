@@ -59,15 +59,12 @@
 			<destination>{f3454eb7-ac58-4787-97e4-47065c45c60b}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{7e5fbc13-a720-4f54-baf7-04534535bf2c}</destination>
+			<destination>{b2995690-53d8-4aaf-a84c-10651b2a1cc5}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{29ac09ec-da89-48c9-9d44-803468a1391e}">
-		<property name="maxVoices">
-			<value>3</value>
-		</property>
 		<property name="maximumDistance">
-			<value>40</value>
+			<value>30</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{818f634c-a9ac-40bb-915d-35cfe745f928}" />
@@ -92,6 +89,9 @@
 	<object class="EventMixerMaster" id="{119f5c70-ad12-43f7-87f8-e8ddad982777}">
 		<relationship name="automators">
 			<destination>{5e615822-dc1f-4441-aab6-9d6a57a2f04d}</destination>
+		</relationship>
+		<relationship name="modulators">
+			<destination>{ee81ca58-191e-4fc8-bbd5-28dbbf56b2f5}</destination>
 		</relationship>
 		<relationship name="effectChain">
 			<destination>{6d451f9f-d437-440b-ba6b-6d19d51242eb}</destination>
@@ -150,6 +150,23 @@
 			<destination>{e1749e9d-2cbe-4e9f-88b0-511337838d59}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{ee81ca58-191e-4fc8-bbd5-28dbbf56b2f5}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="releaseTime">
+			<value>800</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{6d451f9f-d437-440b-ba6b-6d19d51242eb}">
 		<relationship name="effects">
 			<destination>{280b81ae-343f-4ca1-b0c8-f37233d0cd49}</destination>
@@ -192,7 +209,7 @@
 	<object class="MixerBusFader" id="{280b81ae-343f-4ca1-b0c8-f37233d0cd49}" />
 	<object class="SpatialiserEffect" id="{9e9d61b6-d4bc-4f47-b703-3da79ba68a5e}">
 		<property name="maximumDistance">
-			<value>40</value>
+			<value>30</value>
 		</property>
 		<property name="panBlend">
 			<value>0.849999964</value>
@@ -223,7 +240,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-18</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{5d53819b-d343-4855-be9b-7a0f47260025}">
@@ -231,7 +248,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>10</value>
+			<value>-8</value>
 		</property>
 	</object>
 </objects>
