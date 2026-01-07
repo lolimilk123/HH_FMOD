@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{82529364-af26-41fb-9993-eadf4e86fba4}">
+		<property name="name">
+			<value>Grp_GroundCrackAttack</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{a1f94176-fd7e-47bf-aead-bb10e91e945d}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{e2796fda-e71d-4857-87f7-977b60e91154}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{7e5fbc13-a720-4f54-baf7-04534535bf2c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{a1f94176-fd7e-47bf-aead-bb10e91e945d}">
+		<relationship name="effects">
+			<destination>{d046d8bf-c4ed-432e-9158-9495687800a8}</destination>
+			<destination>{5591ef21-bba3-4c69-b09e-657e8c4f2acd}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{e2796fda-e71d-4857-87f7-977b60e91154}" />
+	<object class="LimiterEffect" id="{d046d8bf-c4ed-432e-9158-9495687800a8}">
+		<property name="ceiling">
+			<value>-1.10000002</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{5591ef21-bba3-4c69-b09e-657e8c4f2acd}" />
+</objects>
