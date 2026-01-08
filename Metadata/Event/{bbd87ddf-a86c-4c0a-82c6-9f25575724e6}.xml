@@ -110,6 +110,9 @@
 		<relationship name="modulators">
 			<destination>{bb9266a4-0f4f-4733-b74d-d3207b9918a5}</destination>
 		</relationship>
+		<relationship name="fadeOutCurve">
+			<destination>{6242aafa-6ef8-4991-81d8-66635f435b5d}</destination>
+		</relationship>
 		<relationship name="event">
 			<destination>{ec88ebec-ef35-4756-b580-8071709d207d}</destination>
 		</relationship>
@@ -145,6 +148,14 @@
 			<value>3.5</value>
 		</property>
 	</object>
+	<object class="FadeCurve" id="{6242aafa-6ef8-4991-81d8-66635f435b5d}">
+		<relationship name="startPoint">
+			<destination>{f15d217d-7d27-4b5a-bbe0-648265877853}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{8fb4090f-a15f-490c-8bb2-55a00a653620}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{f20c8aaa-9141-47b8-85ed-09a627c14f3b}">
 		<relationship name="effects">
 			<destination>{7bf742e5-eeaf-43cc-a349-ab76e72f0fee}</destination>
@@ -167,6 +178,25 @@
 		</relationship>
 	</object>
 	<object class="LimiterEffect" id="{853d6356-4ac3-48ea-a1ca-6406f6ecc0d7}" />
+	<object class="AutomationPoint" id="{f15d217d-7d27-4b5a-bbe0-648265877853}">
+		<property name="position">
+			<value>0.60000000000000009</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.548574984</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{8fb4090f-a15f-490c-8bb2-55a00a653620}">
+		<property name="position">
+			<value>2</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{7bf742e5-eeaf-43cc-a349-ab76e72f0fee}" />
 	<object class="Automator" id="{1fafde89-3e38-433c-bcf8-188c0c55389d}">
 		<property name="nameOfPropertyBeingAutomated">
