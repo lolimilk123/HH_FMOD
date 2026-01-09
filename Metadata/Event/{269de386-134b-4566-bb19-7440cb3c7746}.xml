@@ -64,8 +64,11 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{4650a66b-984d-48a3-97c3-19427c5d9a7c}">
+		<property name="minimumDistance">
+			<value>3</value>
+		</property>
 		<property name="maximumDistance">
-			<value>50</value>
+			<value>25</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{ab562c21-1865-4296-b9c7-2b65294be23e}" />
@@ -168,6 +171,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{84c68bf8-0865-4797-b3d2-35dba2a24561}">
+		<property name="volume">
+			<value>-3</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -194,7 +200,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{e395928e-1e35-476b-a1b1-ca98de5c5681}">
 		<property name="volume">
-			<value>-8.5</value>
+			<value>-12</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -251,6 +257,7 @@
 	<object class="MixerBusFader" id="{770302a2-dc50-4e78-9eab-a2117376dbe5}" />
 	<object class="MixerBusEffectChain" id="{c11b61a8-9430-43c0-9dee-b377244ed082}">
 		<relationship name="effects">
+			<destination>{c689bbed-4be2-4a9a-8f2e-9290b7c4cb9b}</destination>
 			<destination>{c65d1e53-1817-4dbc-b6ed-875c12660b75}</destination>
 			<destination>{62b44e1d-cfaf-44fe-b410-df0d06815941}</destination>
 		</relationship>
@@ -305,16 +312,45 @@
 		</relationship>
 	</object>
 	<object class="SpatialiserEffect" id="{98222a7e-649d-4ead-8960-593104e97b43}">
+		<property name="distanceRolloffType">
+			<value>1</value>
+		</property>
+		<property name="minimumDistance">
+			<value>3</value>
+		</property>
 		<property name="maximumDistance">
-			<value>50</value>
+			<value>25</value>
 		</property>
 		<property name="panBlend">
-			<value>0.844999969</value>
+			<value>0.894999981</value>
+		</property>
+		<property name="userStereoSeparation">
+			<value>16</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{c689bbed-4be2-4a9a-8f2e-9290b7c4cb9b}">
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="filterTypeB">
+			<value>9</value>
+		</property>
+		<property name="frequencyA">
+			<value>129.082764</value>
+		</property>
+		<property name="frequencyB">
+			<value>1024.91663</value>
+		</property>
+		<property name="gainA">
+			<value>4.13792992</value>
+		</property>
+		<property name="gainB">
+			<value>-2.58620834</value>
 		</property>
 	</object>
 	<object class="DistortionEffect" id="{c65d1e53-1817-4dbc-b6ed-875c12660b75}">
 		<property name="level">
-			<value>0.36499998</value>
+			<value>0.699999988</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{62b44e1d-cfaf-44fe-b410-df0d06815941}" />

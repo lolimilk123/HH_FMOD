@@ -121,7 +121,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{fa022ca6-7064-4938-b418-b4d008e92592}">
 		<property name="volume">
-			<value>5</value>
+			<value>-0.5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{4cd5fea8-0227-4b96-90af-b719fdb3cb14}</destination>
@@ -362,6 +362,7 @@
 		<property name="start">
 			<value>6</value>
 		</property>
+		<property name="name" />
 		<property name="volume">
 			<value>-4</value>
 		</property>
@@ -402,6 +403,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{7a4bd8de-067e-4ff7-8693-d86bf27ac1b8}">
+		<property name="volume">
+			<value>2</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -1248,6 +1252,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{7589b212-8ec8-44aa-8e17-aea1774fc403}">
 		<relationship name="effects">
+			<destination>{0dfebfee-68bc-4d1b-af45-b3bcbfdbdb88}</destination>
 			<destination>{f7b3063d-f5bb-4115-9cfd-8464662ed7c5}</destination>
 		</relationship>
 	</object>
@@ -1262,6 +1267,29 @@
 	<object class="SpatialiserEffect" id="{7b35723e-6904-4a48-a474-42a0579b7ba9}">
 		<property name="maximumDistance">
 			<value>10000</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{0dfebfee-68bc-4d1b-af45-b3bcbfdbdb88}">
+		<property name="filterTypeA">
+			<value>4</value>
+		</property>
+		<property name="filterTypeB">
+			<value>9</value>
+		</property>
+		<property name="frequencyA">
+			<value>1488.18237</value>
+		</property>
+		<property name="frequencyB">
+			<value>4462.32178</value>
+		</property>
+		<property name="qualityA">
+			<value>1.06368971</value>
+		</property>
+		<property name="qualityB">
+			<value>1.10000002</value>
+		</property>
+		<property name="gainB">
+			<value>10.8620701</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{f7b3063d-f5bb-4115-9cfd-8464662ed7c5}" />

@@ -26,6 +26,7 @@
 			<destination>{0aac7343-6eb1-4ca4-a966-e23335c30069}</destination>
 		</relationship>
 		<relationship name="groupTracks">
+			<destination>{84622032-7181-46ff-9c8f-e4b29a1ca310}</destination>
 			<destination>{05071697-4f52-4ad9-9965-af1f7e5a8858}</destination>
 			<destination>{36da0615-bd62-47b8-9bd0-734ebfe27a0b}</destination>
 			<destination>{a1231b79-52ca-4ed8-acb6-75c7921d735e}</destination>
@@ -70,6 +71,14 @@
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{0aac7343-6eb1-4ca4-a966-e23335c30069}" />
+	<object class="GroupTrack" id="{84622032-7181-46ff-9c8f-e4b29a1ca310}">
+		<relationship name="modules">
+			<destination>{223f6a54-0c45-4c8c-ac84-8e5e4adea088}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{ec603a1e-e4e9-4aa7-a364-d690c82b982e}</destination>
+		</relationship>
+	</object>
 	<object class="GroupTrack" id="{05071697-4f52-4ad9-9965-af1f7e5a8858}">
 		<relationship name="automationTracks">
 			<destination>{449e2f8d-7c09-4399-b5e1-10bfe42f8df9}</destination>
@@ -102,6 +111,7 @@
 			<destination>{f4a73618-2321-49f6-8d0e-6d8fade7359a}</destination>
 			<destination>{9cdc224f-5a47-4051-a611-b00f8b0d4728}</destination>
 			<destination>{e5cfcbf0-19c3-452e-a4c6-8a8d81d4cb21}</destination>
+			<destination>{223f6a54-0c45-4c8c-ac84-8e5e4adea088}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{3de2c0c6-8e44-42fd-abbf-314949f5a8fa}">
@@ -121,6 +131,31 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{666007ee-0d0d-4ade-85e3-256b10e2b27c}" />
+	<object class="SingleSound" id="{223f6a54-0c45-4c8c-ac84-8e5e4adea088}">
+		<property name="length">
+			<value>0.73333333333333328</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{caf5ef28-b36c-4bd9-b2a3-791f27fd859f}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{ec603a1e-e4e9-4aa7-a364-d690c82b982e}">
+		<property name="volume">
+			<value>7.5</value>
+		</property>
+		<property name="name">
+			<value>Audio 4</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{ae49b3b8-956f-41b3-acb4-3ab2915bf437}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{fcf54688-232c-4968-9394-8bebc087ca2e}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{3de2c0c6-8e44-42fd-abbf-314949f5a8fa}</destination>
+		</relationship>
+	</object>
 	<object class="AutomationTrack" id="{449e2f8d-7c09-4399-b5e1-10bfe42f8df9}">
 		<relationship name="automator">
 			<destination>{d8bade43-48af-41b3-9087-c35919e06479}</destination>
@@ -147,6 +182,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{4d231c23-3dc5-4da5-805f-7a0956daa358}">
+		<property name="volume">
+			<value>-80</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -225,6 +263,12 @@
 	</object>
 	<object class="MixerBusPanner" id="{7dd713e3-90de-4d15-8e5d-45ad507fb8a4}" />
 	<object class="MixerBusFader" id="{ed32d8f0-6469-4331-8f5d-51cfdeeb3bb4}" />
+	<object class="MixerBusEffectChain" id="{ae49b3b8-956f-41b3-acb4-3ab2915bf437}">
+		<relationship name="effects">
+			<destination>{09cb6eaf-3d84-44bc-be64-e3d04fde5afa}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{fcf54688-232c-4968-9394-8bebc087ca2e}" />
 	<object class="Automator" id="{d8bade43-48af-41b3-9087-c35919e06479}">
 		<property name="nameOfPropertyBeingAutomated">
 			<value>pitch</value>
@@ -271,6 +315,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{806c7d1f-529c-4047-840f-0589b608fc7e}" />
 	<object class="MultibandEqEffect" id="{a973c974-0bb5-44f8-9477-53204be325e5}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<property name="filterTypeA">
 			<value>8</value>
 		</property>
@@ -318,13 +365,16 @@
 			<value>40</value>
 		</property>
 		<property name="panBlend">
-			<value>0.48999998</value>
+			<value>0.600000024</value>
 		</property>
 		<property name="userStereoSeparation">
 			<value>38</value>
 		</property>
 	</object>
 	<object class="DelayEffect" id="{b1fa3c4a-cabb-49bf-a36b-1cece5aab204}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<property name="delay">
 			<value>94</value>
 		</property>
@@ -336,6 +386,9 @@
 		</property>
 	</object>
 	<object class="SFXReverbEffect" id="{f9d090f8-f73f-4490-90e0-78795afdb495}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<property name="decayTime">
 			<value>1700</value>
 		</property>
@@ -353,6 +406,7 @@
 		</property>
 	</object>
 	<object class="LimiterEffect" id="{e5357559-4cc6-46d7-bb57-d45c8d2ee0b4}" />
+	<object class="MixerBusFader" id="{09cb6eaf-3d84-44bc-be64-e3d04fde5afa}" />
 	<object class="AutomationCurve" id="{53a3c823-b3eb-4399-8f3d-b67eebdfedb8}">
 		<relationship name="parameter">
 			<destination>{af179aae-301b-41d8-8ef6-5a7246f9321b}</destination>
