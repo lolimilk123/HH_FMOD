@@ -179,6 +179,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{06fd60fe-4905-4eea-bd05-98234d4fa144}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{3d7fef78-adb2-44b2-a544-2e60a3bcc0c9}</destination>
 		</relationship>
@@ -397,8 +400,8 @@
 		<property name="startOffset">
 			<value>11</value>
 		</property>
-		<property name="volume">
-			<value>-80</value>
+		<property name="pitch">
+			<value>2.4000001</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{fb4eb7b7-e8b5-4526-898f-d665a185cf08}</destination>
@@ -418,6 +421,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{58740277-edd8-49d4-8c89-80bd1ce78bbc}">
+		<property name="volume">
+			<value>-80</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -437,9 +443,6 @@
 		</property>
 		<property name="timelockedOffset">
 			<value>0.074999999999999928</value>
-		</property>
-		<property name="volume">
-			<value>-80</value>
 		</property>
 		<relationship name="fadeInCurve">
 			<destination>{10c1a569-25b5-49ae-a173-934944a3b303}</destination>
@@ -508,9 +511,6 @@
 		<property name="timelockedOffset">
 			<value>0.065000000000000002</value>
 		</property>
-		<property name="volume">
-			<value>-80</value>
-		</property>
 		<relationship name="fadeInCurve">
 			<destination>{fcdd7fee-175b-48a1-b0a9-67e8df25d652}</destination>
 		</relationship>
@@ -523,7 +523,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{81cc4c79-1fb5-4895-bda4-0c8408973c66}">
 		<property name="volume">
-			<value>-2</value>
+			<value>-6.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 8</value>
@@ -582,6 +582,9 @@
 		<property name="length">
 			<value>0.35999999999999999</value>
 		</property>
+		<property name="volume">
+			<value>-80</value>
+		</property>
 		<relationship name="fadeInCurve">
 			<destination>{edea7dd3-3c30-4aeb-9c82-1d7305bffd2a}</destination>
 		</relationship>
@@ -613,6 +616,9 @@
 		<property name="length">
 			<value>0.47999999999999998</value>
 		</property>
+		<relationship name="fadeInCurve">
+			<destination>{a4fa1d47-f103-4b46-9bd2-90a413c8b0a8}</destination>
+		</relationship>
 		<relationship name="fadeOutCurve">
 			<destination>{ad1289ad-6927-4274-9ab8-88e2fe9031d4}</destination>
 		</relationship>
@@ -624,7 +630,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{07008446-a666-4dea-b3ae-3c85e03b4132}">
 		<property name="volume">
-			<value>-15</value>
+			<value>-5.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 9</value>
@@ -1203,6 +1209,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{29acf5b1-fcb0-4a32-866a-10a2962f8977}" />
+	<object class="FadeCurve" id="{a4fa1d47-f103-4b46-9bd2-90a413c8b0a8}">
+		<relationship name="startPoint">
+			<destination>{f283f424-8d8a-4ad9-a44d-184baea0b65d}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{a9e196d8-2b59-45d4-bd77-adb23faef59b}</destination>
+		</relationship>
+	</object>
 	<object class="FadeCurve" id="{ad1289ad-6927-4274-9ab8-88e2fe9031d4}">
 		<relationship name="startPoint">
 			<destination>{fed9cca2-6d5b-4698-842e-fd729bfcc692}</destination>
@@ -1445,9 +1459,28 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{7ca133ec-d96d-4441-9634-85ad0471a68e}" />
+	<object class="AutomationPoint" id="{f283f424-8d8a-4ad9-a44d-184baea0b65d}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+		<property name="curveShape">
+			<value>0.271312475</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{a9e196d8-2b59-45d4-bd77-adb23faef59b}">
+		<property name="position">
+			<value>0.12000000000000001</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{fed9cca2-6d5b-4698-842e-fd729bfcc692}">
 		<property name="position">
-			<value>0.02</value>
+			<value>0.019999999999999993</value>
 		</property>
 		<property name="value">
 			<value>1</value>
