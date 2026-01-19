@@ -59,7 +59,7 @@
 			<destination>{a9dcd93a-9151-4306-8500-4317a4597530}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{7e5fbc13-a720-4f54-baf7-04534535bf2c}</destination>
+			<destination>{181b1f6b-2c50-4378-a934-45d3cf731482}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{a1965c0f-38cb-4d5a-ae55-6c02d804a91b}" />
@@ -124,6 +124,9 @@
 		<property name="volume">
 			<value>-6</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{db3fd516-a3f1-4e25-b030-62295b9b9b6d}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{4b1d81dc-623b-4bb7-8715-13a5eeb1fb43}</destination>
 		</relationship>
@@ -420,14 +423,34 @@
 			<destination>{04f00d70-cce7-403e-afbd-3daf7281b60c}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{db3fd516-a3f1-4e25-b030-62295b9b9b6d}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="releaseTime">
+			<value>420</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{4b1d81dc-623b-4bb7-8715-13a5eeb1fb43}">
 		<relationship name="effects">
-			<destination>{0a57d1ff-e6ea-4c7e-af68-b45f73dacd4d}</destination>
 			<destination>{9fac4754-8d56-4949-ac3c-ba3de3d47220}</destination>
 			<destination>{8445bcb9-5250-4fb6-9aac-412c301fdc4e}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{93432495-8e8d-4ed3-8389-85099fdea134}" />
+	<object class="MixerBusPanner" id="{93432495-8e8d-4ed3-8389-85099fdea134}">
+		<property name="surroundPanExtent">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{44fe7739-7c37-4600-8789-a67e8554beaf}" />
 	<object class="FadeCurve" id="{c30a6bb1-b3c9-41c5-88b8-e373ebe3e3a6}">
 		<relationship name="startPoint">
@@ -662,11 +685,6 @@
 			<destination>{1d04eeb6-2002-480a-b3a8-36d7bf7224c3}</destination>
 		</relationship>
 	</object>
-	<object class="LimiterEffect" id="{0a57d1ff-e6ea-4c7e-af68-b45f73dacd4d}">
-		<property name="ceiling">
-			<value>-9</value>
-		</property>
-	</object>
 	<object class="MixerBusFader" id="{9fac4754-8d56-4949-ac3c-ba3de3d47220}" />
 	<object class="SpatialiserEffect" id="{8445bcb9-5250-4fb6-9aac-412c301fdc4e}">
 		<property name="maximumDistance">
@@ -674,6 +692,9 @@
 		</property>
 		<property name="overrideRange">
 			<value>true</value>
+		</property>
+		<property name="userStereoSeparation">
+			<value>0</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{a58d92c7-be4c-4fcb-b712-5191d9af69a1}">
