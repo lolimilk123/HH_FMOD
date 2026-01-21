@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{181b1f6b-2c50-4378-a934-45d3cf731482}">
+		<property name="name">
+			<value>Grp_IceLaser</value>
+		</property>
+		<property name="maxInstances">
+			<value>10</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{546c4b98-77aa-4077-8c91-eae95706d8b0}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{c09bbbb4-d6ce-42bd-a86c-03b675685a1d}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{7e5fbc13-a720-4f54-baf7-04534535bf2c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{546c4b98-77aa-4077-8c91-eae95706d8b0}">
+		<relationship name="effects">
+			<destination>{1fba6c10-29a2-4256-8b35-ef4d03501f50}</destination>
+			<destination>{2ad71c2d-0f0b-4032-93de-105099e19c4c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{c09bbbb4-d6ce-42bd-a86c-03b675685a1d}" />
+	<object class="CompressorEffect" id="{1fba6c10-29a2-4256-8b35-ef4d03501f50}">
+		<property name="threshold">
+			<value>-10.5</value>
+		</property>
+		<property name="gain">
+			<value>-1</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{2ad71c2d-0f0b-4032-93de-105099e19c4c}" />
+</objects>

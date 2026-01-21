@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{4ae74f19-df6d-4e10-a009-8e6ec09e6c16}">
+		<property name="name">
+			<value>Grp_Funnel_StartAndShoot</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{9883d0b7-c702-44d3-b1a4-fc86dc7dd4b5}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{8938bd92-40d3-4b18-b270-ba33c5e21fef}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{7e5fbc13-a720-4f54-baf7-04534535bf2c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{9883d0b7-c702-44d3-b1a4-fc86dc7dd4b5}">
+		<relationship name="effects">
+			<destination>{638e968f-542c-4f0b-a150-f10cd256713e}</destination>
+			<destination>{fc2cafa1-4db0-4d34-a741-19788f434b8a}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{8938bd92-40d3-4b18-b270-ba33c5e21fef}" />
+	<object class="CompressorEffect" id="{638e968f-542c-4f0b-a150-f10cd256713e}">
+		<property name="threshold">
+			<value>-15</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{fc2cafa1-4db0-4d34-a741-19788f434b8a}" />
+</objects>
