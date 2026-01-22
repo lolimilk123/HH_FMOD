@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{4a1553bc-3d2e-4c74-9d14-87e8a12c69e5}">
+		<property name="name">
+			<value>Grp_MeleeAttackTipLight</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{ba163b3b-3a24-4f21-bc92-06748ed105a1}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{899e8054-06ce-4f10-ac84-edab38923a49}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{7e5fbc13-a720-4f54-baf7-04534535bf2c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{ba163b3b-3a24-4f21-bc92-06748ed105a1}">
+		<relationship name="effects">
+			<destination>{83dbe9fc-bc18-455b-af4d-2b52f7727637}</destination>
+			<destination>{87f6d6a4-4808-4a0c-87c7-352e58d953ac}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{899e8054-06ce-4f10-ac84-edab38923a49}" />
+	<object class="CompressorEffect" id="{83dbe9fc-bc18-455b-af4d-2b52f7727637}">
+		<property name="threshold">
+			<value>-9</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{87f6d6a4-4808-4a0c-87c7-352e58d953ac}" />
+</objects>
