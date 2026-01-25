@@ -7,6 +7,9 @@
 		<property name="name">
 			<value>Reverb</value>
 		</property>
+		<relationship name="automators">
+			<destination>{926bd778-14ef-4236-ab06-1e1e8765640a}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{ad3a54a1-4a1d-40c3-9fa8-f21ccbdfff30}</destination>
 		</relationship>
@@ -17,6 +20,14 @@
 			<destination>{e5b68109-db04-4d15-a9e0-687c669880d7}</destination>
 		</relationship>
 	</object>
+	<object class="Automator" id="{926bd778-14ef-4236-ab06-1e1e8765640a}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{4514a4e6-8075-4ef2-91d2-ed8b0c6e974c}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{ad3a54a1-4a1d-40c3-9fa8-f21ccbdfff30}">
 		<relationship name="effects">
 			<destination>{7c12b86a-9320-488c-83a0-c1123afd21a1}</destination>
@@ -24,6 +35,15 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e4b38581-6d12-460c-a4a8-d3cb0dd3bad2}" />
+	<object class="AutomationCurve" id="{4514a4e6-8075-4ef2-91d2-ed8b0c6e974c}">
+		<relationship name="parameter">
+			<destination>{213735de-afed-4791-8bea-c577bb7eacd0}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{9dc383de-e059-4689-87f2-9a332a4fa47e}</destination>
+			<destination>{142f2e6e-b53f-4bb5-a9f4-63ec9f842742}</destination>
+		</relationship>
+	</object>
 	<object class="SFXReverbEffect" id="{7c12b86a-9320-488c-83a0-c1123afd21a1}">
 		<property name="decayTime">
 			<value>2500</value>
@@ -54,4 +74,20 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{57e5332d-12d1-4866-aee3-947de6cf3021}" />
+	<object class="AutomationPoint" id="{9dc383de-e059-4689-87f2-9a332a4fa47e}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{142f2e6e-b53f-4bb5-a9f4-63ec9f842742}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
 </objects>
