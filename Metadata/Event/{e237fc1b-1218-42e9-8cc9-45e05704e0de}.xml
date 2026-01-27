@@ -103,7 +103,6 @@
 	</object>
 	<object class="GroupTrack" id="{a5f15b33-87e4-44f5-99c7-11c23610da29}">
 		<relationship name="modules">
-			<destination>{af7955b8-0f80-4583-be89-149835b27860}</destination>
 			<destination>{cc8a4a07-050c-41a8-8f8c-ca76622d1d8f}</destination>
 			<destination>{367b4a39-4c2b-4ee7-86c7-e43efbc0198f}</destination>
 			<destination>{7edb2c7c-56e4-4a92-9917-ab2b5788f060}</destination>
@@ -118,7 +117,6 @@
 	</object>
 	<object class="Timeline" id="{8e833dc9-8d6e-4b3b-bc5a-4e2f74675bfe}">
 		<relationship name="modules">
-			<destination>{af7955b8-0f80-4583-be89-149835b27860}</destination>
 			<destination>{cc8a4a07-050c-41a8-8f8c-ca76622d1d8f}</destination>
 			<destination>{3276d41c-4376-46c3-bfec-7c7484a93670}</destination>
 			<destination>{d7aaea9a-d3b1-41fb-9ccf-198621a958f0}</destination>
@@ -307,29 +305,6 @@
 			<destination>{109add75-b089-4a90-b586-0d24f4cd80ae}</destination>
 		</relationship>
 	</object>
-	<object class="CommandSound" id="{af7955b8-0f80-4583-be89-149835b27860}">
-		<property name="triggerProbabilityEnabled">
-			<value>true</value>
-		</property>
-		<property name="triggerProbability">
-			<value>0</value>
-		</property>
-		<property name="start">
-			<value>1.8807692307692441</value>
-		</property>
-		<property name="length">
-			<value>0</value>
-		</property>
-		<property name="commandType">
-			<value>3</value>
-		</property>
-		<property name="targetValue">
-			<value>1</value>
-		</property>
-		<relationship name="commandTarget">
-			<destination>{162cc0db-cc41-464a-ab45-4ce5ccfa100d}</destination>
-		</relationship>
-	</object>
 	<object class="CommandSound" id="{cc8a4a07-050c-41a8-8f8c-ca76622d1d8f}">
 		<property name="start">
 			<value>117.23076923076911</value>
@@ -417,10 +392,10 @@
 	</object>
 	<object class="TransitionRegion" id="{f07ffcf2-37a7-4b43-b204-900b16637790}">
 		<property name="position">
-			<value>9.3057692307692417</value>
+			<value>2.0365384615384716</value>
 		</property>
 		<property name="length">
-			<value>108.83653846153847</value>
+			<value>110.65384615384623</value>
 		</property>
 		<property name="quantizationInterval">
 			<value>6</value>
@@ -484,6 +459,9 @@
 		</relationship>
 		<relationship name="destination">
 			<destination>{f374eba8-cd56-4906-b873-ac6098b831fd}</destination>
+		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{1add0df0-ffe5-4633-8d2d-cadcf897c4de}</destination>
 		</relationship>
 	</object>
 	<object class="TempoMarker" id="{e8ff7727-09f3-42e5-a723-4606975ba686}">
@@ -627,6 +605,17 @@
 			<destination>{dc2a7dad-0def-407d-8c03-217ea1a961d5}</destination>
 			<destination>{e918d5a8-c0d5-4f5d-a618-36c687b41211}</destination>
 			<destination>{b419a3b3-357b-409c-b922-a88ddba8f232}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{1add0df0-ffe5-4633-8d2d-cadcf897c4de}">
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{162cc0db-cc41-464a-ab45-4ce5ccfa100d}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{9dd04563-8c7d-45eb-bf0a-fe41f80f2d0f}" />
