@@ -5,7 +5,7 @@
 			<value>Boss_Jianshi_CoffinGroundPound</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bad6cc7d-2618-4c38-9138-2fa5c67a17c6}</destination>
@@ -72,9 +72,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{0e30cab0-a56b-4dee-ada7-b4f3c18d11fd}">
-		<property name="volume">
-			<value>-6</value>
-		</property>
 		<relationship name="effectChain">
 			<destination>{959d49ec-ca5f-4a9d-b3a2-2d70378938fe}</destination>
 		</relationship>
@@ -100,9 +97,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{1e653960-313e-42dc-974f-e5c16d915e48}">
-		<property name="volume">
-			<value>-9</value>
-		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -119,6 +113,7 @@
 	<object class="MixerBusEffectChain" id="{959d49ec-ca5f-4a9d-b3a2-2d70378938fe}">
 		<relationship name="effects">
 			<destination>{d8107457-7241-420f-b875-99293ecac5f5}</destination>
+			<destination>{c2490ed8-fc1c-4636-bd24-5d7cb3996eb3}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{fda754b1-a288-4097-ae66-339f394509e8}" />
@@ -130,5 +125,13 @@
 	</object>
 	<object class="MixerBusPanner" id="{b1b3af4a-dc6f-4fad-9640-7131c9e597d5}" />
 	<object class="MixerBusFader" id="{d8107457-7241-420f-b875-99293ecac5f5}" />
+	<object class="ProxyEffect" id="{c2490ed8-fc1c-4636-bd24-5d7cb3996eb3}">
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="preset">
+			<destination>{2ab5fddb-9a77-4a59-934c-1489db8a015c}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{40f642e7-770b-4c3a-8100-aedda0ceb133}" />
 </objects>

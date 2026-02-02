@@ -5,7 +5,7 @@
 			<value>Boss_Jianshi_UltiAttack_TeleStance</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bad6cc7d-2618-4c38-9138-2fa5c67a17c6}</destination>
@@ -73,7 +73,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{816008b0-ab2b-4580-9c21-54ba75412ef3}">
 		<property name="volume">
-			<value>-3</value>
+			<value>2</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{f9a1eff0-3d2a-4fb2-86a7-1376a07b644e}</destination>
@@ -100,9 +100,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{d038c639-90c3-4593-a5d7-3e2a0e6bea3b}">
-		<property name="volume">
-			<value>-7</value>
-		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -119,16 +116,31 @@
 	<object class="MixerBusEffectChain" id="{f9a1eff0-3d2a-4fb2-86a7-1376a07b644e}">
 		<relationship name="effects">
 			<destination>{966fa205-7b8c-4f84-936c-583dfb7fd2de}</destination>
+			<destination>{ed58982d-fd91-4bb9-ac0f-1de2275d4e42}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8d086b4f-bd0b-4f3f-88c3-f5c34b1d8d76}" />
 	<object class="MixerBusFader" id="{4b96ee69-e7a5-444b-8061-679efe167c01}" />
 	<object class="MixerBusEffectChain" id="{fce34377-b41f-4c97-ae8d-9feb16d32c2c}">
 		<relationship name="effects">
+			<destination>{190f5362-ce0b-4380-9b1a-b139606639cb}</destination>
 			<destination>{5806d3a0-2067-4832-87b0-4d1aa18ff461}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{fa3c3874-89fd-4416-a2b3-6cb9335aac23}" />
 	<object class="MixerBusFader" id="{966fa205-7b8c-4f84-936c-583dfb7fd2de}" />
+	<object class="ProxyEffect" id="{ed58982d-fd91-4bb9-ac0f-1de2275d4e42}">
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="preset">
+			<destination>{2ab5fddb-9a77-4a59-934c-1489db8a015c}</destination>
+		</relationship>
+	</object>
+	<object class="DistortionEffect" id="{190f5362-ce0b-4380-9b1a-b139606639cb}">
+		<property name="level">
+			<value>0.170000002</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{5806d3a0-2067-4832-87b0-4d1aa18ff461}" />
 </objects>
