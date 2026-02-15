@@ -63,7 +63,11 @@
 			<destination>{7e5fbc13-a720-4f54-baf7-04534535bf2c}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{85e5f4e0-f897-43be-b09c-48abf6056b2c}" />
+	<object class="EventAutomatableProperties" id="{85e5f4e0-f897-43be-b09c-48abf6056b2c}">
+		<property name="maximumDistance">
+			<value>30</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{24f93db9-0b68-4176-a22f-1812196989ba}" />
 	<object class="GroupTrack" id="{1d588117-090a-479a-acab-7df1e6cf6210}">
 		<relationship name="modules">
@@ -88,6 +92,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{3a78fb37-a076-4591-8dcf-d8e2766c1780}">
+		<property name="volume">
+			<value>-2.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{5530f7f5-e3af-4fa6-b972-2fe34bdbeb70}</destination>
 		</relationship>
@@ -106,7 +113,7 @@
 	<object class="MixerBusPanner" id="{69e90a5f-5558-4714-a24d-6e5e157afa0c}" />
 	<object class="SingleSound" id="{e43560bc-88da-41dd-9605-45dafc44018c}">
 		<property name="start">
-			<value>0.28000000000000003</value>
+			<value>0.32000000000000001</value>
 		</property>
 		<property name="length">
 			<value>0.29581249999999998</value>
@@ -116,6 +123,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{915af6f3-7a76-45f7-b54a-09c97f68bc19}">
+		<property name="volume">
+			<value>4</value>
+		</property>
 		<property name="name">
 			<value>Audio 4</value>
 		</property>
@@ -138,9 +148,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{8176cd9c-65c6-4c68-8b42-0028c09f59b7}">
-		<property name="volume">
-			<value>-15.5</value>
-		</property>
 		<property name="name">
 			<value>Audio 5</value>
 		</property>
@@ -156,7 +163,6 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{5530f7f5-e3af-4fa6-b972-2fe34bdbeb70}">
 		<relationship name="effects">
-			<destination>{0591185d-5706-4061-b210-971cc4429cff}</destination>
 			<destination>{08c25d26-1c85-4f70-9e45-4187a072f02e}</destination>
 			<destination>{921c39b7-12b9-430f-a8fe-7679ccde69b2}</destination>
 			<destination>{0549a76a-4521-4345-9785-3c6a95045c2b}</destination>
@@ -166,6 +172,7 @@
 	<object class="MixerBusFader" id="{0958765f-7553-41b3-91ba-b4d114565bd9}" />
 	<object class="MixerBusEffectChain" id="{8fc93cd5-5e8d-4a1c-95b1-ff792279448a}">
 		<relationship name="effects">
+			<destination>{5fc1a554-9aa0-4f0e-92cf-183d9016d123}</destination>
 			<destination>{8ded27e3-0f98-45f8-b881-dbf645c40966}</destination>
 		</relationship>
 	</object>
@@ -176,32 +183,25 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{707f2704-e77e-4813-98fa-c6c1c3d45393}" />
-	<object class="CompressorEffect" id="{0591185d-5706-4061-b210-971cc4429cff}">
-		<property name="threshold">
-			<value>-30.5</value>
-		</property>
-		<property name="ratio">
-			<value>1.85000002</value>
-		</property>
-		<property name="attackTime">
-			<value>56</value>
-		</property>
-		<property name="releaseTime">
-			<value>72</value>
-		</property>
-		<property name="gain">
-			<value>8</value>
-		</property>
-	</object>
 	<object class="MixerBusFader" id="{08c25d26-1c85-4f70-9e45-4187a072f02e}" />
 	<object class="SpatialiserEffect" id="{921c39b7-12b9-430f-a8fe-7679ccde69b2}">
+		<property name="maximumDistance">
+			<value>30</value>
+		</property>
 		<property name="panBlend">
-			<value>0.729999959</value>
+			<value>0.829999983</value>
 		</property>
 	</object>
-	<object class="LimiterEffect" id="{0549a76a-4521-4345-9785-3c6a95045c2b}">
-		<property name="ceiling">
-			<value>-2.9000001</value>
+	<object class="LimiterEffect" id="{0549a76a-4521-4345-9785-3c6a95045c2b}" />
+	<object class="MultibandEqEffect" id="{5fc1a554-9aa0-4f0e-92cf-183d9016d123}">
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="frequencyA">
+			<value>623.349548</value>
+		</property>
+		<property name="gainA">
+			<value>7.75862217</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{8ded27e3-0f98-45f8-b881-dbf645c40966}" />
