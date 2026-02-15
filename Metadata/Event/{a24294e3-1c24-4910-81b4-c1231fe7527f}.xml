@@ -5,7 +5,7 @@
 			<value>CatapultBullet_Explosion</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>3</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c25a0cab-b7bc-4f02-bcd5-fcb1dfa3468d}</destination>
@@ -111,7 +111,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{4ccc9cc0-c5f2-4c78-976a-550faafb32b0}">
 		<property name="volume">
-			<value>-14</value>
+			<value>-7.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -128,8 +128,8 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{47527176-112d-4c1e-8091-28c018d276d7}">
 		<relationship name="effects">
+			<destination>{9870da30-978c-4de4-b6e2-2b758a1a310c}</destination>
 			<destination>{a8ae8641-5c3b-4dc7-89bf-1b276099c50a}</destination>
-			<destination>{db02a0be-b657-4a0e-83d1-0f9b2d955b65}</destination>
 			<destination>{6876a55b-ff9b-4fb9-86af-551f6f4b26b8}</destination>
 		</relationship>
 	</object>
@@ -149,12 +149,15 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{6a322fec-899b-4a0a-b94a-e0a2c297209f}" />
-	<object class="MixerBusFader" id="{a8ae8641-5c3b-4dc7-89bf-1b276099c50a}" />
-	<object class="SpatialiserEffect" id="{db02a0be-b657-4a0e-83d1-0f9b2d955b65}">
-		<property name="maximumDistance">
-			<value>9800</value>
+	<object class="PannerEffect" id="{9870da30-978c-4de4-b6e2-2b758a1a310c}">
+		<property name="surroundStereoSeparation">
+			<value>2</value>
+		</property>
+		<property name="overridingOutputFormat">
+			<value>3</value>
 		</property>
 	</object>
+	<object class="MixerBusFader" id="{a8ae8641-5c3b-4dc7-89bf-1b276099c50a}" />
 	<object class="LimiterEffect" id="{6876a55b-ff9b-4fb9-86af-551f6f4b26b8}" />
 	<object class="AutomationPoint" id="{f3efc52b-e060-43b9-b523-abee52451813}">
 		<property name="position">

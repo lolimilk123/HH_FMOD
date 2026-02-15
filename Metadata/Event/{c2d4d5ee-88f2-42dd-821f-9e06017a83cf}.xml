@@ -5,7 +5,7 @@
 			<value>FootAttack_HeavyLanding</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>3</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c25a0cab-b7bc-4f02-bcd5-fcb1dfa3468d}</destination>
@@ -116,8 +116,8 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{56ae4b20-0dc3-4a18-b0f8-624ef337275d}">
 		<relationship name="effects">
+			<destination>{c8196501-8bf5-460b-9135-168d1eafc533}</destination>
 			<destination>{f0cbbb03-fc80-404d-9ed7-36fe212d9181}</destination>
-			<destination>{719ecc28-c633-49fa-b222-65a1db803768}</destination>
 			<destination>{53cc9f94-2021-46e1-aa3d-f56b6b564cad}</destination>
 		</relationship>
 	</object>
@@ -129,12 +129,15 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{fed90be6-2947-4b93-a1a2-7e56034423e4}" />
-	<object class="MixerBusFader" id="{f0cbbb03-fc80-404d-9ed7-36fe212d9181}" />
-	<object class="SpatialiserEffect" id="{719ecc28-c633-49fa-b222-65a1db803768}">
-		<property name="maximumDistance">
-			<value>9800</value>
+	<object class="PannerEffect" id="{c8196501-8bf5-460b-9135-168d1eafc533}">
+		<property name="surroundStereoSeparation">
+			<value>28</value>
+		</property>
+		<property name="overridingOutputFormat">
+			<value>3</value>
 		</property>
 	</object>
+	<object class="MixerBusFader" id="{f0cbbb03-fc80-404d-9ed7-36fe212d9181}" />
 	<object class="LimiterEffect" id="{53cc9f94-2021-46e1-aa3d-f56b6b564cad}" />
 	<object class="MixerBusFader" id="{478bc738-be9c-4b7f-ab11-41ca195137f0}" />
 </objects>

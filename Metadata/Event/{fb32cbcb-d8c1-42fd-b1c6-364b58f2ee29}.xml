@@ -5,7 +5,7 @@
 			<value>FootAttack_Jump</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>3</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c25a0cab-b7bc-4f02-bcd5-fcb1dfa3468d}</destination>
@@ -101,9 +101,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{86db0d7c-6727-4203-9897-817fa7dd4a3e}">
-		<property name="volume">
-			<value>-5</value>
-		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -119,8 +116,8 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{7ad2e129-2860-469b-b817-a25e5ef804b3}">
 		<relationship name="effects">
+			<destination>{05676767-48ed-4735-a9f1-9a8cca500d8d}</destination>
 			<destination>{5317bed8-e283-47b0-859e-6d6fb14194fe}</destination>
-			<destination>{ccc823d1-f3b6-4177-ac0c-c6f6ccf6c231}</destination>
 			<destination>{7254dc7c-7f7d-431f-8603-b32caa7a16dd}</destination>
 		</relationship>
 	</object>
@@ -132,12 +129,15 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4ea6857e-fb5d-434a-a040-6401b0f4a92c}" />
-	<object class="MixerBusFader" id="{5317bed8-e283-47b0-859e-6d6fb14194fe}" />
-	<object class="SpatialiserEffect" id="{ccc823d1-f3b6-4177-ac0c-c6f6ccf6c231}">
-		<property name="maximumDistance">
-			<value>9800</value>
+	<object class="PannerEffect" id="{05676767-48ed-4735-a9f1-9a8cca500d8d}">
+		<property name="surroundStereoSeparation">
+			<value>42</value>
+		</property>
+		<property name="overridingOutputFormat">
+			<value>3</value>
 		</property>
 	</object>
+	<object class="MixerBusFader" id="{5317bed8-e283-47b0-859e-6d6fb14194fe}" />
 	<object class="LimiterEffect" id="{7254dc7c-7f7d-431f-8603-b32caa7a16dd}" />
 	<object class="MixerBusFader" id="{955cc620-29ee-4be6-a622-ea96df0d625a}" />
 </objects>
