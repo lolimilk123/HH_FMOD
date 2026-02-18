@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{9adeed4a-8ebd-43c6-8983-7c43089d22e2}">
 		<property name="name">
-			<value>MobMove_Assassin_ChargeAtkA_SpearStab</value>
+			<value>MobMove_Assassin_SpearStab</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -162,6 +162,12 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{b59abd5a-ecbc-42b0-85d8-572977c7a89e}">
+		<property name="volume">
+			<value>-3</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{17660fce-3e95-4198-b417-2f7c2aa75fec}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{da681bad-804c-4310-a42f-6f898ad36630}</destination>
 		</relationship>
@@ -487,6 +493,23 @@
 		<relationship name="output">
 			<destination>{b59abd5a-ecbc-42b0-85d8-572977c7a89e}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{17660fce-3e95-4198-b417-2f7c2aa75fec}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="releaseTime">
+			<value>820</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{da681bad-804c-4310-a42f-6f898ad36630}">
 		<relationship name="effects">
