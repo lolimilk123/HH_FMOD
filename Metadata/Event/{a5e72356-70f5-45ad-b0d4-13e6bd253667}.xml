@@ -102,6 +102,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{700fbdb1-0ee1-4100-9ef5-29d40c65bb13}">
+		<property name="volume">
+			<value>-3</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{2a1b6588-01b6-4af7-8544-ec376539307a}</destination>
 		</relationship>
@@ -186,6 +189,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{88d3b47c-f88e-4d62-a6b6-5577c68fb0ba}">
+		<property name="volume">
+			<value>-0.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -235,8 +241,9 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{2a1b6588-01b6-4af7-8544-ec376539307a}">
 		<relationship name="effects">
-			<destination>{b4516d18-da77-4a83-88d9-81c35a65f6ce}</destination>
 			<destination>{a890c2c3-b0b2-4922-8e88-35bb6771929a}</destination>
+			<destination>{50397939-2509-45ca-937f-a71578073a0d}</destination>
+			<destination>{b4516d18-da77-4a83-88d9-81c35a65f6ce}</destination>
 			<destination>{4bff3139-11cf-41fa-91f6-a522ec56d081}</destination>
 		</relationship>
 	</object>
@@ -284,6 +291,18 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b30f4cbc-93c6-4115-a9ca-dd4903246ba9}" />
+	<object class="MixerBusFader" id="{a890c2c3-b0b2-4922-8e88-35bb6771929a}" />
+	<object class="MultibandEqEffect" id="{50397939-2509-45ca-937f-a71578073a0d}">
+		<property name="filterTypeA">
+			<value>7</value>
+		</property>
+		<property name="frequencyA">
+			<value>96.5813828</value>
+		</property>
+		<property name="gainA">
+			<value>-6.72413635</value>
+		</property>
+	</object>
 	<object class="PannerEffect" id="{b4516d18-da77-4a83-88d9-81c35a65f6ce}">
 		<property name="surroundStereoSeparation">
 			<value>40</value>
@@ -292,7 +311,6 @@
 			<value>3</value>
 		</property>
 	</object>
-	<object class="MixerBusFader" id="{a890c2c3-b0b2-4922-8e88-35bb6771929a}" />
 	<object class="LimiterEffect" id="{4bff3139-11cf-41fa-91f6-a522ec56d081}" />
 	<object class="MultibandEqEffect" id="{2fc0a036-b2f4-47ae-b770-78eac0ed8ad5}">
 		<property name="filterTypeA">
