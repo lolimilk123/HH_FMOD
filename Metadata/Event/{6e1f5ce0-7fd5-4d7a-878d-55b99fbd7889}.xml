@@ -64,14 +64,11 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{f360b51b-d0b8-4d35-a687-2097da0c4836}">
-		<property name="maxVoices">
-			<value>2</value>
-		</property>
 		<property name="voiceStealing">
 			<value>4</value>
 		</property>
 		<property name="maximumDistance">
-			<value>50</value>
+			<value>30</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{58b43fd7-c0bb-4ac5-a8ce-d8355af5f959}" />
@@ -129,6 +126,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{cfc608fc-b855-4b78-8c6d-e7f96d114f0d}">
+		<property name="volume">
+			<value>-3.5</value>
+		</property>
 		<relationship name="modulators">
 			<destination>{93e8a927-bd0b-4dcc-a48b-da73154a9b21}</destination>
 		</relationship>
@@ -382,16 +382,16 @@
 			<value>-80</value>
 		</property>
 		<property name="attackTime">
-			<value>500</value>
+			<value>660</value>
 		</property>
 		<property name="attackShape">
-			<value>-0.628728509</value>
+			<value>-0.23367244</value>
 		</property>
 		<property name="releaseTime">
-			<value>500</value>
+			<value>640</value>
 		</property>
 		<property name="releaseShape">
-			<value>0.675192773</value>
+			<value>0.333775431</value>
 		</property>
 		<property name="finalValue">
 			<value>-80</value>
@@ -399,6 +399,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{f47f9630-f8c8-45eb-935b-d4c4b6671dbc}">
 		<relationship name="effects">
+			<destination>{574f53ab-f5d9-47a7-ab7d-454354cb7743}</destination>
 			<destination>{a4e5d3dd-4baf-4221-8f20-b4f4e97cb75a}</destination>
 			<destination>{db76c9e3-f554-4700-abb8-db27760a5f09}</destination>
 		</relationship>
@@ -613,13 +614,15 @@
 			<destination>{9de503b3-a7ea-4932-9f3c-63c656300d2f}</destination>
 		</relationship>
 	</object>
+	<object class="PannerEffect" id="{574f53ab-f5d9-47a7-ab7d-454354cb7743}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{a4e5d3dd-4baf-4221-8f20-b4f4e97cb75a}" />
 	<object class="SpatialiserEffect" id="{db76c9e3-f554-4700-abb8-db27760a5f09}">
 		<property name="maximumDistance">
 			<value>30</value>
-		</property>
-		<property name="overrideRange">
-			<value>true</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{ad04e121-3d77-4abc-a8f1-6135a7287ef0}">
