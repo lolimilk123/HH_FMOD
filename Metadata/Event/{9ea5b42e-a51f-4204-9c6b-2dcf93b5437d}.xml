@@ -153,6 +153,9 @@
 		<property name="timelockedOffset">
 			<value>0.37</value>
 		</property>
+		<property name="pitch">
+			<value>-1.20000005</value>
+		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{94c884bd-6eae-46a4-8cdb-9371d30cfc0f}</destination>
 		</relationship>
@@ -162,7 +165,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{3781556a-f17b-422d-b476-87aec9c60790}">
 		<property name="volume">
-			<value>-3</value>
+			<value>-5</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
@@ -244,8 +247,8 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{4b0f9720-c872-49e7-8035-ee757ce0c393}">
 		<relationship name="effects">
+			<destination>{e2d91a7b-eea1-40ab-b49a-4b6bd8f4db19}</destination>
 			<destination>{1e3b3059-1ccc-4c39-a822-01e782381481}</destination>
-			<destination>{58c0b6a4-e8fd-4eae-8b78-a5dc7405ab37}</destination>
 			<destination>{5af4c2a8-af1e-46b1-9f53-a6adb13d0ac7}</destination>
 		</relationship>
 	</object>
@@ -320,42 +323,12 @@
 			<value>0</value>
 		</property>
 	</object>
-	<object class="MixerBusFader" id="{1e3b3059-1ccc-4c39-a822-01e782381481}" />
-	<object class="MultibandEqEffect" id="{58c0b6a4-e8fd-4eae-8b78-a5dc7405ab37}">
-		<property name="bypass">
-			<value>true</value>
-		</property>
-		<property name="filterTypeA">
-			<value>9</value>
-		</property>
-		<property name="filterTypeB">
-			<value>9</value>
-		</property>
-		<property name="filterTypeC">
-			<value>9</value>
-		</property>
-		<property name="frequencyA">
-			<value>150</value>
-		</property>
-		<property name="frequencyB">
-			<value>2100</value>
-		</property>
-		<property name="frequencyC">
-			<value>7336.98682</value>
-		</property>
-		<property name="qualityA">
-			<value>0.800000012</value>
-		</property>
-		<property name="gainA">
-			<value>-3</value>
-		</property>
-		<property name="gainB">
-			<value>-3.5</value>
-		</property>
-		<property name="gainC">
-			<value>-1.5</value>
+	<object class="DistortionEffect" id="{e2d91a7b-eea1-40ab-b49a-4b6bd8f4db19}">
+		<property name="level">
+			<value>0.269999981</value>
 		</property>
 	</object>
+	<object class="MixerBusFader" id="{1e3b3059-1ccc-4c39-a822-01e782381481}" />
 	<object class="CompressorEffect" id="{5af4c2a8-af1e-46b1-9f53-a6adb13d0ac7}">
 		<property name="bypass">
 			<value>true</value>

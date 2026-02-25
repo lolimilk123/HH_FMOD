@@ -149,6 +149,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{acf0af66-cd3f-4e01-9f6a-1c029aad9211}">
+		<property name="volume">
+			<value>-6</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -238,7 +241,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{9d12fad0-dc30-475b-ade5-f837abc6910e}">
 		<property name="volume">
-			<value>1</value>
+			<value>-4</value>
 		</property>
 		<property name="name">
 			<value>Audio 3</value>
@@ -289,6 +292,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{d2b4ef35-8b04-44a9-8084-f232fe158b98}">
 		<relationship name="effects">
+			<destination>{b39bdacb-15f8-47d5-99ed-1c89e1aeb6b9}</destination>
 			<destination>{b266e5fc-3cb1-4735-87eb-7b7f46926382}</destination>
 			<destination>{fb22c044-b046-4128-a953-84f460e2fc4a}</destination>
 			<destination>{7ebb3c41-5f66-4822-8d97-79af0451cf98}</destination>
@@ -368,6 +372,32 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7ee7bf9a-7651-4dcc-8a22-b8713bfd73de}" />
+	<object class="MultibandEqEffect" id="{b39bdacb-15f8-47d5-99ed-1c89e1aeb6b9}">
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="filterTypeB">
+			<value>9</value>
+		</property>
+		<property name="frequencyA">
+			<value>486.13089</value>
+		</property>
+		<property name="frequencyB">
+			<value>2252.2688</value>
+		</property>
+		<property name="qualityA">
+			<value>1.05000007</value>
+		</property>
+		<property name="qualityB">
+			<value>0.900000036</value>
+		</property>
+		<property name="gainA">
+			<value>2.58620739</value>
+		</property>
+		<property name="gainB">
+			<value>5.6896553</value>
+		</property>
+	</object>
 	<object class="DistortionEffect" id="{b266e5fc-3cb1-4735-87eb-7b7f46926382}">
 		<relationship name="automators">
 			<destination>{11b8f4f9-b840-4d21-8292-b4c3578c86ee}</destination>
@@ -406,7 +436,7 @@
 			<value>true</value>
 		</property>
 		<property name="panBlend">
-			<value>0.649999976</value>
+			<value>0</value>
 		</property>
 	</object>
 	<object class="LimiterEffect" id="{dd2250af-a04e-40c8-9c68-4fc71a1b95e1}" />
@@ -551,7 +581,7 @@
 			<value>0.28000000000000003</value>
 		</property>
 		<property name="value">
-			<value>0.779999971</value>
+			<value>0.599999964</value>
 		</property>
 		<property name="curveShape">
 			<value>-0.235711262</value>

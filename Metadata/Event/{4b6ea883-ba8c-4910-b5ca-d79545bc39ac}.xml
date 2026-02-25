@@ -59,6 +59,9 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{792ebc65-59c4-461d-9606-bf2581e40b5c}">
+		<property name="maxVoices">
+			<value>1</value>
+		</property>
 		<property name="minimumDistance">
 			<value>10</value>
 		</property>
@@ -100,7 +103,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{54117bfb-cb31-4ab0-b4b8-0b3f2adc6729}">
 		<property name="volume">
-			<value>-7</value>
+			<value>-6</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{2761331a-030a-427c-a365-f9f60f28cf6f}</destination>
@@ -131,7 +134,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{76805906-1d7d-4119-876d-4824f907d324}">
 		<property name="volume">
-			<value>-12</value>
+			<value>-5.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -230,7 +233,6 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{97da56d6-1591-4062-92f0-3716d2b5ef67}">
 		<relationship name="effects">
-			<destination>{ed651c1e-7f6b-4909-8d33-f90110dcb74c}</destination>
 			<destination>{ce209654-bc71-46c0-be9a-a18bf7b4c97c}</destination>
 			<destination>{b8b773c9-97bf-40be-a009-4e1dfb739607}</destination>
 			<destination>{ad015cd3-1fbb-447c-b934-6a2c0156b5cd}</destination>
@@ -291,14 +293,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a8cda432-d622-48c5-a616-0ecd3feec124}" />
-	<object class="PannerEffect" id="{ed651c1e-7f6b-4909-8d33-f90110dcb74c}">
-		<property name="surroundStereoSeparation">
-			<value>34</value>
-		</property>
-		<property name="overridingOutputFormat">
-			<value>3</value>
-		</property>
-	</object>
 	<object class="MixerBusFader" id="{ce209654-bc71-46c0-be9a-a18bf7b4c97c}" />
 	<object class="PannerEffect" id="{b8b773c9-97bf-40be-a009-4e1dfb739607}">
 		<property name="surroundPanExtent">
@@ -312,14 +306,23 @@
 		</property>
 	</object>
 	<object class="SpatialiserEffect" id="{ad015cd3-1fbb-447c-b934-6a2c0156b5cd}">
+		<property name="distanceRolloffType">
+			<value>1</value>
+		</property>
 		<property name="minimumDistance">
 			<value>10</value>
 		</property>
 		<property name="maximumDistance">
 			<value>35</value>
 		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="soundSize">
+			<value>28</value>
+		</property>
 		<property name="panBlend">
-			<value>0.909999967</value>
+			<value>0.099999994</value>
 		</property>
 	</object>
 	<object class="LimiterEffect" id="{f63fcf06-dbf7-4ff8-97cd-62bc28976a64}" />

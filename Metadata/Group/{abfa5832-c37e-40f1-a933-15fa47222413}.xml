@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerGroup" id="{abfa5832-c37e-40f1-a933-15fa47222413}">
+		<property name="volume">
+			<value>-3</value>
+		</property>
 		<property name="name">
 			<value>Boss_HHN</value>
 		</property>
@@ -16,9 +19,87 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{e77ffbe8-ba3e-48d4-8dfb-ba5c085af37f}">
 		<relationship name="effects">
+			<destination>{ce7d57a5-81a5-42da-bf54-ea800c59a6b0}</destination>
+			<destination>{8ad7c5e5-6886-48fa-93fc-2c3abdd49a7a}</destination>
+			<destination>{9f604c34-40df-4b52-996b-47f5f9a02b92}</destination>
+			<destination>{b8f2eef1-0768-4cee-bff3-5c15fac08eea}</destination>
 			<destination>{5a376d70-e1f6-4e31-aa04-b3d9942482b5}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{facbaf94-dbb6-4773-929a-b4a85934ec8e}" />
+	<object class="DistortionEffect" id="{ce7d57a5-81a5-42da-bf54-ea800c59a6b0}">
+		<property name="level">
+			<value>0.224999994</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{8ad7c5e5-6886-48fa-93fc-2c3abdd49a7a}">
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="filterTypeB">
+			<value>9</value>
+		</property>
+		<property name="filterTypeC">
+			<value>4</value>
+		</property>
+		<property name="filterTypeD">
+			<value>9</value>
+		</property>
+		<property name="filterTypeE">
+			<value>9</value>
+		</property>
+		<property name="frequencyA">
+			<value>327.934692</value>
+		</property>
+		<property name="frequencyB">
+			<value>550.48114</value>
+		</property>
+		<property name="frequencyC">
+			<value>100.667625</value>
+		</property>
+		<property name="frequencyD">
+			<value>1369.81946</value>
+		</property>
+		<property name="frequencyE">
+			<value>203.623886</value>
+		</property>
+		<property name="qualityA">
+			<value>1.55000007</value>
+		</property>
+		<property name="qualityC">
+			<value>2.62068963</value>
+		</property>
+		<property name="gainA">
+			<value>9.5</value>
+		</property>
+		<property name="gainB">
+			<value>-4.65517235</value>
+		</property>
+		<property name="gainD">
+			<value>4.5</value>
+		</property>
+		<property name="gainE">
+			<value>-3.62068939</value>
+		</property>
+	</object>
+	<object class="DelayEffect" id="{9f604c34-40df-4b52-996b-47f5f9a02b92}">
+		<property name="delay">
+			<value>120</value>
+		</property>
+		<property name="feedback">
+			<value>21</value>
+		</property>
+		<property name="level">
+			<value>-13.5</value>
+		</property>
+	</object>
+	<object class="LimiterEffect" id="{b8f2eef1-0768-4cee-bff3-5c15fac08eea}">
+		<property name="ceiling">
+			<value>-1.10000002</value>
+		</property>
+		<property name="release">
+			<value>20</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{5a376d70-e1f6-4e31-aa04-b3d9942482b5}" />
 </objects>

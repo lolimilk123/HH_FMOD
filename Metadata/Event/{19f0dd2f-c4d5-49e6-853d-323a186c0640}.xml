@@ -1034,7 +1034,7 @@
 			<value>0.30000000000000004</value>
 		</property>
 		<property name="pitch">
-			<value>-3</value>
+			<value>-8</value>
 		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{47491cab-1323-454a-a4b7-0ec308e200ff}</destination>
@@ -1080,6 +1080,9 @@
 		<property name="timelockedOffset">
 			<value>0.050000000000000003</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{5d8492db-e234-4455-a5da-74e6e19f0ba1}</destination>
+		</relationship>
 		<relationship name="fadeOutCurve">
 			<destination>{18eb2544-e291-4b40-8c4e-eea741ac546a}</destination>
 		</relationship>
@@ -1602,6 +1605,29 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b0ea65ff-c5f9-48e9-a54e-3c2da1fc3dc8}" />
+	<object class="ADSRModulator" id="{5d8492db-e234-4455-a5da-74e6e19f0ba1}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="initialValue">
+			<value>-100</value>
+		</property>
+		<property name="attackTime">
+			<value>200</value>
+		</property>
+		<property name="holdTime">
+			<value>0</value>
+		</property>
+		<property name="decayTime">
+			<value>0</value>
+		</property>
+		<property name="releaseTime">
+			<value>160</value>
+		</property>
+		<property name="finalValue">
+			<value>-41</value>
+		</property>
+	</object>
 	<object class="FadeCurve" id="{18eb2544-e291-4b40-8c4e-eea741ac546a}">
 		<relationship name="startPoint">
 			<destination>{67245add-aecf-4313-8197-2d10c41fb8ef}</destination>
@@ -1650,6 +1676,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{a7422ec5-071a-4ff1-8f93-d2aca6a0accf}">
 		<relationship name="effects">
+			<destination>{f760632e-3988-48c4-a44c-d189a8f51c5b}</destination>
 			<destination>{09dc97af-76e7-4527-b15e-f4f1c1da5331}</destination>
 			<destination>{ac3dac40-3256-4d13-9bf1-bc657a8bddca}</destination>
 		</relationship>
@@ -2492,6 +2519,23 @@
 			<destination>{7a59d9e0-4eb4-4a16-8c4a-a9d76ee43be0}</destination>
 			<destination>{b2f4bbc9-3366-420c-bafd-b1fa60db8b4c}</destination>
 		</relationship>
+	</object>
+	<object class="TremoloEffect" id="{f760632e-3988-48c4-a44c-d189a8f51c5b}">
+		<property name="frequency">
+			<value>13</value>
+		</property>
+		<property name="depth">
+			<value>0.164999992</value>
+		</property>
+		<property name="shape">
+			<value>1</value>
+		</property>
+		<property name="duty">
+			<value>0.599999964</value>
+		</property>
+		<property name="phase">
+			<value>0.349999994</value>
+		</property>
 	</object>
 	<object class="MixerBusFader" id="{09dc97af-76e7-4527-b15e-f4f1c1da5331}" />
 	<object class="MultibandEqEffect" id="{ac3dac40-3256-4d13-9bf1-bc657a8bddca}">

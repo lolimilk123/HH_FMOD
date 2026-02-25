@@ -239,7 +239,7 @@
 			<value>0.1875</value>
 		</property>
 		<property name="length">
-			<value>1.075</value>
+			<value>0.49250000000000005</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>0.125</value>
@@ -247,6 +247,9 @@
 		<property name="pitch">
 			<value>3.60000014</value>
 		</property>
+		<relationship name="fadeOutCurve">
+			<destination>{94ef7c00-7afe-4f39-be73-a001c43fb6bd}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{771a39f0-3b14-4cb7-9702-1ffd0a3710cf}</destination>
 		</relationship>
@@ -378,6 +381,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b38574c1-5c07-45f6-b2d3-1d1edd4834f5}" />
+	<object class="FadeCurve" id="{94ef7c00-7afe-4f39-be73-a001c43fb6bd}">
+		<relationship name="startPoint">
+			<destination>{33f69032-9f68-4d2b-83b0-c029dbd41714}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{77909ade-61d8-44ca-9ef9-326f86ac3600}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{fb525932-cc0a-4cfd-b606-8b71238f46fe}">
 		<relationship name="effects">
 			<destination>{d14b2a9a-248d-482f-9ef5-d6873c4401c9}</destination>
@@ -472,6 +483,25 @@
 	</object>
 	<object class="MixerBusFader" id="{acbd4b96-0770-4d52-99db-36c7da5904fa}" />
 	<object class="MixerBusFader" id="{f2997949-7f5b-4eb0-88de-61ee255f3c77}" />
+	<object class="AutomationPoint" id="{33f69032-9f68-4d2b-83b0-c029dbd41714}">
+		<property name="position">
+			<value>0.40000000000000002</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.186766088</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{77909ade-61d8-44ca-9ef9-326f86ac3600}">
+		<property name="position">
+			<value>0.68000000000000005</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MultibandEqEffect" id="{d14b2a9a-248d-482f-9ef5-d6873c4401c9}">
 		<property name="filterTypeA">
 			<value>7</value>
