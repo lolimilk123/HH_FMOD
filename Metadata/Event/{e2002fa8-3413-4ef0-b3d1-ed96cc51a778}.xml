@@ -60,6 +60,9 @@
 		<property name="maxVoices">
 			<value>3</value>
 		</property>
+		<property name="minimumDistance">
+			<value>6.80000019</value>
+		</property>
 		<property name="maximumDistance">
 			<value>45</value>
 		</property>
@@ -80,7 +83,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{7997b236-af4c-4291-bb66-114a602c6b16}">
 		<property name="volume">
-			<value>-2.5</value>
+			<value>-2</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{13ef186e-ebbb-417e-ae04-72ff30ed1819}</destination>
@@ -128,6 +131,8 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{13ef186e-ebbb-417e-ae04-72ff30ed1819}">
 		<relationship name="effects">
+			<destination>{46c219e6-70eb-401f-a704-9d5f7df2369f}</destination>
+			<destination>{4f042195-d1c2-4010-b534-3df4b183850d}</destination>
 			<destination>{a8c75bcd-b878-4b22-8890-3f49e77f13e3}</destination>
 			<destination>{78178708-1d99-4e6b-bf60-d5f6a7cc31af}</destination>
 			<destination>{11a72158-ecd9-4b71-86c8-fab6bfc00f05}</destination>
@@ -171,6 +176,16 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c7ee5954-7749-4e87-812a-dfcb32cd4548}" />
+	<object class="PannerEffect" id="{46c219e6-70eb-401f-a704-9d5f7df2369f}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="DistortionEffect" id="{4f042195-d1c2-4010-b534-3df4b183850d}">
+		<property name="level">
+			<value>0.24499999</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{a8c75bcd-b878-4b22-8890-3f49e77f13e3}" />
 	<object class="PitchShifterEffect" id="{78178708-1d99-4e6b-bf60-d5f6a7cc31af}">
 		<property name="pitch">
@@ -188,16 +203,22 @@
 			<value>4</value>
 		</property>
 		<property name="frequencyA">
-			<value>6500</value>
+			<value>8679.35742</value>
 		</property>
 		<property name="frequencyB">
-			<value>110</value>
+			<value>83.7317581</value>
 		</property>
 		<property name="qualityA">
-			<value>1.01910341</value>
+			<value>1.3757931</value>
+		</property>
+		<property name="qualityB">
+			<value>0.686068952</value>
 		</property>
 	</object>
 	<object class="SpatialiserEffect" id="{704bb29c-95bf-4712-a2a9-54ceb1c716b8}">
+		<property name="minimumDistance">
+			<value>6.80000019</value>
+		</property>
 		<property name="maximumDistance">
 			<value>45</value>
 		</property>

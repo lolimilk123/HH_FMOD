@@ -60,8 +60,11 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{e78fb7ac-b9c1-4fe5-9420-80adcd6af500}">
+		<property name="minimumDistance">
+			<value>6.20000029</value>
+		</property>
 		<property name="maximumDistance">
-			<value>60</value>
+			<value>55</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{f926e242-3b3d-4971-b612-bdbf7f34f2c8}" />
@@ -82,9 +85,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{14044222-dfa9-4bc8-b0a2-452c06073da1}">
-		<property name="volume">
-			<value>-6</value>
-		</property>
 		<relationship name="automators">
 			<destination>{89b6392d-b3c4-4969-b8ea-d342a9aea345}</destination>
 		</relationship>
@@ -112,6 +112,9 @@
 	<object class="EventSound" id="{4f7cb000-9243-4288-9eb8-047ed9acc5d9}">
 		<property name="length">
 			<value>5.6994583333333333</value>
+		</property>
+		<property name="pitch">
+			<value>5</value>
 		</property>
 		<relationship name="event">
 			<destination>{ba3d7248-a2d5-419c-b1d8-53eb4d7ba6a1}</destination>
@@ -169,7 +172,7 @@
 			<value>-80</value>
 		</property>
 		<property name="attackTime">
-			<value>282.051331</value>
+			<value>220</value>
 		</property>
 		<property name="decayTime">
 			<value>2400</value>
@@ -186,26 +189,35 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{adb700b5-566b-4cf5-847f-5319b84f99f0}">
 		<relationship name="effects">
+			<destination>{6501853b-41ef-426e-aefb-266acb384547}</destination>
 			<destination>{8fe1bb05-1956-4052-b7ea-71ba83d0d1cf}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{0d0b8a0f-ff1a-4e0d-aead-4d71e5307c8a}" />
 	<object class="MixerBusFader" id="{c6517296-4c9c-4afc-937d-be471f187b9e}" />
 	<object class="SpatialiserEffect" id="{0bf5b2fe-54eb-46e7-8074-92a90c86e612}">
-		<property name="maximumDistance">
-			<value>60</value>
+		<property name="minimumDistance">
+			<value>6.20000029</value>
 		</property>
-		<property name="extentMode">
-			<value>1</value>
+		<property name="maximumDistance">
+			<value>55</value>
 		</property>
 		<property name="soundSize">
-			<value>15</value>
+			<value>0.900000036</value>
 		</property>
 		<property name="minimumExtent">
-			<value>110</value>
+			<value>74</value>
+		</property>
+		<property name="panBlend">
+			<value>0.61500001</value>
 		</property>
 		<property name="userStereoSeparation">
-			<value>76</value>
+			<value>38</value>
+		</property>
+	</object>
+	<object class="DistortionEffect" id="{6501853b-41ef-426e-aefb-266acb384547}">
+		<property name="level">
+			<value>0.155000001</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{8fe1bb05-1956-4052-b7ea-71ba83d0d1cf}" />
