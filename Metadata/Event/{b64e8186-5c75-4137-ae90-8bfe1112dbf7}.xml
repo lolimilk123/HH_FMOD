@@ -57,8 +57,11 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{cb4ad179-dfde-4a69-831c-adfa9d71462b}">
+		<property name="minimumDistance">
+			<value>6.20000029</value>
+		</property>
 		<property name="maximumDistance">
-			<value>40</value>
+			<value>65</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{2729fc2c-0b5b-4155-bfef-49a38463e367}" />
@@ -76,6 +79,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{dfec3641-b980-4317-84cd-774f851da951}">
+		<property name="volume">
+			<value>0.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{082e4b50-d527-4224-9b38-e4b8c35de8ed}</destination>
 		</relationship>
@@ -101,6 +107,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{06a567a2-151e-48d0-a10b-d1a2ac8ac540}">
+		<property name="volume">
+			<value>4.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -124,17 +133,65 @@
 	<object class="MixerBusFader" id="{054bfbb2-284c-4925-8aef-64a8ac1c1bdd}" />
 	<object class="MixerBusEffectChain" id="{a3f0bfdd-f5a0-4845-8830-24787d8bf238}">
 		<relationship name="effects">
+			<destination>{a37b4996-b160-4fe9-8e29-bb457f0cf119}</destination>
+			<destination>{b6b1b994-e3a6-4337-a841-4e588b5216d0}</destination>
 			<destination>{044ce473-ea86-4b4d-b7be-286800f16d6f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3b7f92bc-bc7b-4784-a7b0-3de40d09010f}" />
 	<object class="MixerBusFader" id="{769150b3-4981-4b11-bda1-3d28b0118a59}" />
 	<object class="SpatialiserEffect" id="{3bad7669-cc10-41c7-8d47-ba04fbe3e37b}">
+		<property name="minimumDistance">
+			<value>6.20000029</value>
+		</property>
 		<property name="maximumDistance">
-			<value>40</value>
+			<value>65</value>
 		</property>
 		<property name="panBlend">
-			<value>0.469999999</value>
+			<value>0.405000001</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{a37b4996-b160-4fe9-8e29-bb457f0cf119}">
+		<property name="filterTypeA">
+			<value>9</value>
+		</property>
+		<property name="filterTypeB">
+			<value>9</value>
+		</property>
+		<property name="filterTypeC">
+			<value>9</value>
+		</property>
+		<property name="filterTypeD">
+			<value>9</value>
+		</property>
+		<property name="frequencyA">
+			<value>4023.18384</value>
+		</property>
+		<property name="frequencyB">
+			<value>152.354004</value>
+		</property>
+		<property name="frequencyC">
+			<value>868.36615</value>
+		</property>
+		<property name="frequencyD">
+			<value>1685.17639</value>
+		</property>
+		<property name="gainA">
+			<value>8.27586269</value>
+		</property>
+		<property name="gainB">
+			<value>-9.3103447</value>
+		</property>
+		<property name="gainC">
+			<value>6.20689631</value>
+		</property>
+		<property name="gainD">
+			<value>-8.79310417</value>
+		</property>
+	</object>
+	<object class="DistortionEffect" id="{b6b1b994-e3a6-4337-a841-4e588b5216d0}">
+		<property name="level">
+			<value>0.604999959</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{044ce473-ea86-4b4d-b7be-286800f16d6f}" />
